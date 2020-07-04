@@ -1,0 +1,2295 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<base target="_blank">
+<link rel=File-List href="m31_converging_files/filelist.xml">
+<link rel=Edit-Time-Data href="m31_converging_files/editdata.mso">
+<link rel=OLE-Object-Data href="m31_converging_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Visual Physics Online</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ian Cooper</o:Author>
+  <o:Keywords>reflection, refraction, snell's Law, refractive index, waves, wave motion, school physics, high school physics, HSC physics, physics on line</o:Keywords>
+  <o:Description>m31.ppt&#13;&#10;mp/mscripts&#13;&#10;mw_refraction_01.m  wm_refraction_02.m</o:Description>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Ian Cooper</o:LastAuthor>
+  <o:Revision>12</o:Revision>
+  <o:TotalTime>3054</o:TotalTime>
+  <o:Created>2017-10-26T05:36:00Z</o:Created>
+  <o:LastSaved>2017-12-21T05:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1091</o:Words>
+  <o:Characters>6223</o:Characters>
+  <o:Category>waves</o:Category>
+  <o:Lines>51</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>7300</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="m31_converging_files/themedata.thmx">
+<link rel=colorSchemeMapping href="m31_converging_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>121</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-AU</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="375">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true"
+   UnhideWhenUsed="true" Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="0" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-noshow:yes;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 234.0pt right 468.0pt;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:14.0pt;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:165630248;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2014043614 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:1334380740;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-311148056 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-ansi-language:EN-AU;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1030"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:28.85pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.7pt;mso-row-margin-right:
+  .35pt'>
+  <td width=192 style='width:144.3pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+   coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+   filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_s1029" type="#_x0000_t75"
+   style='position:absolute;margin-left:63.85pt;margin-top:118.65pt;width:115.05pt;
+   height:113.25pt;z-index:251664384;visibility:visible;mso-wrap-style:square;
+   mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+   mso-wrap-distance-bottom:0;mso-position-horizontal:right;
+   mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+   mso-position-vertical-relative:text;mso-width-percent:0;
+   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin'>
+   <v:imagedata src="m31_converging_files/image001.png" o:title="" croptop="3778f"
+    cropbottom="9009f" cropleft="12649f" cropright="12867f"/>
+   <w:wrap type="square"/>
+  </v:shape><![endif]--><![if !vml]><img width=153 height=151
+  src="m31_converging_files/image002.jpg" align=right hspace=12 v:shapes="Picture_x0020_1"><![endif]><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='font-size:16.0pt;
+  font-family:"Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman";
+  color:#CC3300'><span style='mso-spacerun:yes'>�</span><o:p></o:p></span></b></p>
+  </td>
+  <td width=572 valign=top style='width:429.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.7pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-AU style='font-size:16.0pt;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#CC3300'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-AU style='font-size:16.0pt;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#CC3300'><span
+  style='mso-spacerun:yes'>�</span></span></b><span lang=EN-AU
+  style='font-size:11.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+  minor-bidi;color:blue'><a
+  href="spHome.htm"><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;font-family:
+  "Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman";color:blue'>VISUAL
+  PHYSICS ONLINE</span></b></a></span><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-AU style='font-size:16.0pt;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#0000CC'><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-AU style='font-size:16.0pt;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#CC0066'><span
+  style='mso-spacerun:yes'>�</span></span></b><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-AU style='font-size:20.0pt;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#CC0066'><span
+  style='mso-spacerun:yes'>�</span><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-AU style='font-size:16.0pt;line-height:150%;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#C55A11;mso-themecolor:accent2;
+  mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>WAVES:<span style='mso-spacerun:yes'>��� </span>RAY MODEL OF
+  LIGHT<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:3.0cm'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='font-size:16.0pt;
+  line-height:150%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+  "Times New Roman";color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;
+  mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'><span style='mso-spacerun:yes'>�� </span>IMAGE FORMATION: THIN
+  LENSES<span style='mso-spacerun:yes'>��������� </span></span></b><span
+  style='font-size:11.0pt;line-height:150%;mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-no-proof:yes'><o:p></o:p></span></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm'
+  width=0><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:12.7pt'>
+  <td width=765 colspan=3 valign=top style='width:573.7pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.7pt'>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:20.0pt;line-height:150%;font-family:"Bookman Old Style",serif;
+  mso-bidi-font-family:"Times New Roman";color:#0000CC'><span
+  style='mso-spacerun:yes'>�</span></span></b><span style='font-family:"Verdana",sans-serif;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:12.7pt'>
+  <td width=765 colspan=3 valign=top style='width:573.7pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.7pt'>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>The most
+  important simple optical device is no doubt is <span class=GramE>the<span
+  style='mso-spacerun:yes'>� </span><b style='mso-bidi-font-weight:normal'><span
+  style='color:#7030A0'>thin</span></b></span><b style='mso-bidi-font-weight:
+  normal'><span style='color:#7030A0'> lens</span></b>. Lenses are used in
+  eyeglasses, camera, telescopes, microscopes, binoculars, and many specialized
+  optical instruments. </span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_21" o:spid="_x0000_i1344" type="#_x0000_t75" style='width:442.5pt;
+   height:105pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image003.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=590 height=140
+  src="m31_converging_files/image004.png" v:shapes="Picture_x0020_21"><![endif]></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><span
+  style='mso-tab-count:1'>��������� </span>Fig. 1.<span
+  style='mso-spacerun:yes'>�� </span>Optical devises using lenses.</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><!--[if gte vml 1]><v:shape id="Picture_x0020_22"
+   o:spid="_x0000_s1028" type="#_x0000_t75" alt="Image result" style='position:absolute;
+   margin-left:141.55pt;margin-top:12.8pt;width:301.5pt;height:205pt;z-index:251673600;
+   visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+   mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+   mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+   mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+   mso-position-vertical:absolute;mso-position-vertical-relative:text;
+   mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+   mso-height-relative:page'>
+   <v:imagedata src="m31_converging_files/image005.jpg" o:title="Image result"/>
+   <w:wrap type="square"/>
+  </v:shape><![endif]--><![if !vml]><img width=402 height=273
+  src="m31_converging_files/image006.jpg" align=left hspace=12
+  alt="Image result" v:shapes="Picture_x0020_22"><![endif]><span lang=EN-AU>Eyeglasses
+  have been used since the late 1200s. The earliest known working telescopes
+  appeared in 1608 in the Netherlands and are credited to Hans <span
+  class=SpellE>Lippershey</span>.</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <span lang=EN-AU style='font-size:14.0pt;line-height:105%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-AU;mso-fareast-language:
+  ZH-CN;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:
+  line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><!--[if gte vml 1]><v:shape id="Picture_x0020_19"
+   o:spid="_x0000_s1027" type="#_x0000_t75" alt="http://sbo.colorado.edu/SBO_OLD_SITE/sbo/astroinfo/galileo/galileo.portrait.jpg"
+   style='position:absolute;margin-left:-14.4pt;margin-top:-595.4pt;width:164.25pt;
+   height:176.25pt;z-index:251671552;visibility:visible;mso-wrap-style:square;
+   mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+   mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+   mso-position-vertical-relative:text;mso-width-percent:0;
+   mso-height-percent:0;mso-width-relative:page;mso-height-relative:page'>
+   <v:imagedata src="m31_converging_files/image007.jpg" o:title="galileo.portrait"/>
+   <w:wrap type="square"/>
+  </v:shape><![endif]--><![if !vml]><img width=219 height=235
+  src="m31_converging_files/image008.jpg" align=left hspace=12
+  alt="http://sbo.colorado.edu/SBO_OLD_SITE/sbo/astroinfo/galileo/galileo.portrait.jpg"
+  v:shapes="Picture_x0020_19"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_20"
+   o:spid="_x0000_s1026" type="#_x0000_t75" alt="https://upload.wikimedia.org/wikipedia/commons/e/e7/Bertini_fresco_of_Galileo_Galilei_and_Doge_of_Venice.jpg"
+   style='position:absolute;margin-left:287.05pt;margin-top:167.55pt;width:163.95pt;
+   height:178pt;z-index:251672576;visibility:visible;mso-wrap-style:square;
+   mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+   mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+   mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+   mso-position-vertical-relative:text;mso-width-percent:0;
+   mso-height-percent:0;mso-width-relative:page;mso-height-relative:page'>
+   <v:imagedata src="m31_converging_files/image009.jpg" o:title="Bertini_fresco_of_Galileo_Galilei_and_Doge_of_Venice"/>
+   <w:wrap type="square"/>
+  </v:shape><![endif]--><![if !vml]><img width=219 height=237
+  src="m31_converging_files/image010.jpg" align=left hspace=12
+  alt="https://upload.wikimedia.org/wikipedia/commons/e/e7/Bertini_fresco_of_Galileo_Galilei_and_Doge_of_Venice.jpg"
+  v:shapes="Picture_x0020_20"><![endif]><span lang=EN-AU><a
+  href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galileo Galilei</a> (the
+  father of <span class=GramE>astronomy<span style='mso-spacerun:yes'>�
+  </span>1564</span> - 1642) on<span style='mso-spacerun:yes'>� </span>7<sup>th</sup>
+  January 1610 made a discovery that shook the world and changed mankind's view
+  of our place in the universe. On that evening, about an hour after sunset,
+  Galileo pointed his home-built telescope towards Jupiter, and saw a peculiar
+  sight: two tiny &quot;stars&quot; to the east of Jupiter, and one to the
+  west, all arranged in a tight straight line along the ecliptic path with
+  Jupiter itself. The next evening, almost on a whim, Galileo decided to check
+  Jupiter again just to verify that the three &quot;fixed stars&quot; lay to
+  the east of Jupiter, since he knew that the planet was moving westward
+  against the background stars. Sure enough, there were the three stars again
+  ... but on the west side of Jupiter, not its east! The only explanation was
+  that those stars weren't &quot;fixed&quot; at all, but moved with Jupiter and
+  indeed, seemed to move around it like our own Moon moves around Earth. This
+  was the beginning of the end of the Aristotelian geocentric universe. </span></p>
+  <span lang=EN-AU style='font-size:14.0pt;line-height:105%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-AU;mso-fareast-language:
+  ZH-CN;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:
+  line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>A thin lens is
+  usually circular in cross-section and has two faces which are portions of
+  spherical surfaces. Lenses can be classified as <b style='mso-bidi-font-weight:
+  normal'><span style='color:#7030A0'>converging</span></b> or <b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>diverging</span></b>
+  (figure 2). The two faces of thin lenses can be any combination of convex,
+  plane or concave shaped surfaces.</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:35.3pt;
+  margin-bottom:8.0pt;margin-left:1.0cm;text-align:center;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'>The
+  important property of lenses is that they form images of objects.<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ansi-language:
+  EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_24"
+   o:spid="_x0000_i1343" type="#_x0000_t75" style='width:441.75pt;height:267.75pt;
+   visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image011.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=589 height=357
+  src="m31_converging_files/image012.png" v:shapes="Picture_x0020_24"><![endif]></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><span
+  style='mso-tab-count:1'>��������� </span>Fig. 2.<span
+  style='mso-spacerun:yes'>� </span>Different types of converging and diverging
+  lenses.</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <span lang=EN-AU style='font-size:14.0pt;line-height:105%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-AU;mso-fareast-language:
+  ZH-CN;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:
+  line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-AU style='color:#7030A0'>CONVERGING THIN LENSES<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>A converging
+  lens can be used to focus a parallel beam of light on to a spot on the <b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>focal plane</span></b><span
+  style='color:#7030A0'> </span>called a <b style='mso-bidi-font-weight:normal'><span
+  style='color:#7030A0'>focal (focus) point</span></b><span style='color:#7030A0'>
+  </span>as shown in figure 12. The distance from the axis of the lens to the
+  focal plane is called the <b style='mso-bidi-font-weight:normal'><span
+  style='color:#7030A0'>focal length</span></b><span style='color:#7030A0'> </span><i
+  style='mso-bidi-font-style:normal'>f</i> of the lens.</span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_26" o:spid="_x0000_i1342" type="#_x0000_t75" style='width:340.5pt;
+   height:217.5pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image013.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=454 height=290
+  src="m31_converging_files/image014.png" v:shapes="Picture_x0020_26"><![endif]></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_1" o:spid="_x0000_i1341" type="#_x0000_t75" style='width:339.75pt;
+   height:228.75pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image015.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=453 height=305
+  src="m31_converging_files/image018.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_22534" o:spid="_x0000_i1340" type="#_x0000_t75" style='width:336.75pt;
+   height:195.75pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image017.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=449 height=261
+  src="m31_converging_files/image017.png" v:shapes="Picture_x0020_22534"><![endif]></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%'><span lang=EN-AU>Fig. 3.<span
+  style='mso-spacerun:yes'>� </span>Rays parallel to the optical axis are
+  focused at a point called the principle focus or principle focal point. Other
+  sets of parallel rays are bought to a focus along the focal plane. <span
+  style='color:#7030A0'>N.B. The ray through the centre of the lens does not
+  deviate</span>.</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>It is easy to
+  find the location of an image of an object for a converging lens using a ray
+  tracing diagram. Select two points on the object � the top and bottom. Only
+  two rays are necessary from each point to give the image location, but the
+  three most useful rays often used are:</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;text-indent:
+  -1.0cm;line-height:150%;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  lang=EN-AU style='mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>A ray drawn parallel to the
+  optical axis from the object will be deviated by the lens so it passes
+  through the principle focal point in the focal plane.</span></p>
+  <p class=MsoNormal style='margin-left:10.35pt;line-height:150%'><span
+  lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;text-indent:
+  -1.0cm;line-height:150%;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  lang=EN-AU style='mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>A ray drawn from the object
+  passing through the centre of the lens has zero deviation.</span></p>
+  <p class=MsoNormal style='margin-left:10.35pt;line-height:150%'><span
+  lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;text-indent:
+  -1.0cm;line-height:150%;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  lang=EN-AU style='mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin'><span style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>A ray drawn from the object
+  through the principle focal point on the object side of the lens will emerge
+  from the lens parallel to the optical axis.</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>The intersection
+  of these three lines in the object plane will determine the location and
+  characteristics of the image.</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='mso-spacerun:yes'>�� </span></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>The lens
+  equation for thin lenses relates the focal length <span style='position:relative;
+  top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+   type="#_x0000_t75" style='width:15.75pt;height:21pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image019.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=28
+  src="m31_converging_files/image020.png" v:shapes="_x0000_i1030"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+    DrawAspect="Content" ObjectID="_1575380991">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>to the object
+  distance <span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1031" type="#_x0000_t75" style='width:18.75pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image021.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=25 height=31
+  src="m31_converging_files/image022.png" v:shapes="_x0000_i1031"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+    DrawAspect="Content" ObjectID="_1575380992">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>and the image
+  distance <span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1032" type="#_x0000_t75" style='width:17.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image023.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=31
+  src="m31_converging_files/image024.png" v:shapes="_x0000_i1032"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+    DrawAspect="Content" ObjectID="_1575380993">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span style='mso-tab-count:1'>��������� </span>(2)<span
+  style='mso-tab-count:1'>�������� </span><span style='color:#7030A0'><span
+  style='position:relative;top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1033" type="#_x0000_t75" style='width:90pt;height:48.75pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image025.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=120 height=65
+  src="m31_converging_files/image026.png" v:shapes="_x0000_i1033"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+    DrawAspect="Content" ObjectID="_1575380994">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>������� </span>lens equation
+  (thin lens)<o:p></o:p></span></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU style='color:#7030A0'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU>If the height of
+  the object is <span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1034" type="#_x0000_t75" style='width:17.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image027.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=31
+  src="m31_converging_files/image028.png" v:shapes="_x0000_i1034"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+    DrawAspect="Content" ObjectID="_1575380995">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>and the height of
+  the image is <span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1035" type="#_x0000_t75" style='width:15pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image029.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=20 height=31
+  src="m31_converging_files/image030.png" v:shapes="_x0000_i1035"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1035"
+    DrawAspect="Content" ObjectID="_1575380996">
+   </o:OLEObject>
+  </xml><![endif]-->, the lateral magnification <span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1036"
+   type="#_x0000_t75" style='width:17.25pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image031.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=19
+  src="m31_converging_files/image032.png" v:shapes="_x0000_i1036"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1036"
+    DrawAspect="Content" ObjectID="_1575380997">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>is</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span style='mso-tab-count:1'>��������� </span>(3)<span
+  style='mso-tab-count:1'>�������� </span><span style='position:relative;
+  top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1037"
+   type="#_x0000_t75" style='width:102pt;height:48.75pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image033.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=136 height=65
+  src="m31_converging_files/image034.png" v:shapes="_x0000_i1037"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1037"
+    DrawAspect="Content" ObjectID="_1575380998">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'>Sign
+  Conventions<o:p></o:p></span></b></p>
+  <p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Converging lens<span
+  style='mso-spacerun:yes'>���� </span><span style='position:relative;
+  top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1038"
+   type="#_x0000_t75" style='width:42pt;height:21pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image035.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=56 height=28
+  src="m31_converging_files/image036.png" v:shapes="_x0000_i1038"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+    DrawAspect="Content" ObjectID="_1575380999">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Diverging lens<span
+  style='mso-spacerun:yes'>������ </span><span style='position:relative;
+  top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1039"
+   type="#_x0000_t75" style='width:42pt;height:21pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image037.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=56 height=28
+  src="m31_converging_files/image038.png" v:shapes="_x0000_i1039"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+    DrawAspect="Content" ObjectID="_1575381000">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Object on side of lens light
+  is coming from<span style='mso-spacerun:yes'>� </span><span style='position:
+  relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1040"
+   type="#_x0000_t75" style='width:47.25pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image039.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=63 height=31
+  src="m31_converging_files/image040.png" v:shapes="_x0000_i1040"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+    DrawAspect="Content" ObjectID="_1575381001">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Image on the opposite of the
+  lens from where the light is coming<span style='mso-spacerun:yes'>�� </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1041" type="#_x0000_t75" style='width:44.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image041.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=59 height=31
+  src="m31_converging_files/image042.png" v:shapes="_x0000_i1041"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+    DrawAspect="Content" ObjectID="_1575381002">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Image on the same of the lens
+  from where the light is coming<span style='mso-spacerun:yes'>���� </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1042" type="#_x0000_t75" style='width:44.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image043.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=59 height=31
+  src="m31_converging_files/image044.png" v:shapes="_x0000_i1042"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+    DrawAspect="Content" ObjectID="_1575381003">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Object upright<span
+  style='mso-spacerun:yes'>����� </span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1043"
+   type="#_x0000_t75" style='width:45pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image045.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=60 height=31
+  src="m31_converging_files/image046.png" v:shapes="_x0000_i1043"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+    DrawAspect="Content" ObjectID="_1575381004">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Image upright<span
+  style='mso-spacerun:yes'>����� </span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1044"
+   type="#_x0000_t75" style='width:42.75pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image047.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=57 height=31
+  src="m31_converging_files/image048.png" v:shapes="_x0000_i1044"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+    DrawAspect="Content" ObjectID="_1575381005">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span></span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:2.0cm;margin-bottom:.0001pt;mso-add-space:auto;
+  text-indent:-42.5pt;line-height:150%;mso-list:l1 level1 lfo4;tab-stops:2.0cm 70.9pt'><![if !supportLists]><span
+  lang=EN-AU style='font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>�<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=EN-AU>Image inverted<span
+  style='mso-spacerun:yes'>��� </span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1045"
+   type="#_x0000_t75" style='width:42pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image049.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=56 height=31
+  src="m31_converging_files/image050.png" v:shapes="_x0000_i1045"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1045"
+    DrawAspect="Content" ObjectID="_1575381006">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>����</span></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU>Figure 4 show the three rays drawn from the object (tree) to
+  locate the position of the image from the top and from the bottom of the
+  object. The measurements for distances from figure 4 are:</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span style='mso-tab-count:1'>��������� </span><span
+  style='position:relative;top:35.0pt;mso-text-raise:-35.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1046" type="#_x0000_t75" style='width:207pt;height:77.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image051.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=276 height=103
+  src="m31_converging_files/image052.png" v:shapes="_x0000_i1046"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1046"
+    DrawAspect="Content" ObjectID="_1575381007">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU>From the lens equation (equation 2) the predicted image distance <span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1047" type="#_x0000_t75" style='width:17.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image053.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=31
+  src="m31_converging_files/image024.png" v:shapes="_x0000_i1047"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1047"
+    DrawAspect="Content" ObjectID="_1575381008">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>is</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span style='mso-tab-count:2'>����������������������� </span><span
+  style='position:relative;top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1048" type="#_x0000_t75" style='width:356.25pt;height:48.75pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image054.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=475 height=65
+  src="m31_converging_files/image055.png" v:shapes="_x0000_i1048"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1048"
+    DrawAspect="Content" ObjectID="_1575381009">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU>The lateral magnification <span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1049"
+   type="#_x0000_t75" style='width:17.25pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image056.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=19
+  src="m31_converging_files/image032.png" v:shapes="_x0000_i1049"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1049"
+    DrawAspect="Content" ObjectID="_1575381010">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>(equation 3)</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span style='mso-tab-count:2'>����������������������� </span><span
+  style='position:relative;top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1050" type="#_x0000_t75" style='width:183.75pt;height:48.75pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image057.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=245 height=65
+  src="m31_converging_files/image058.png" v:shapes="_x0000_i1050"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1050"
+    DrawAspect="Content" ObjectID="_1575381011">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>������ </span><span
+  style='color:#7030A0'>image is inverted</span></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU>The predicted height <span style='position:relative;top:7.0pt;
+  mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1051" type="#_x0000_t75"
+   style='width:15pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image059.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=20 height=31
+  src="m31_converging_files/image030.png" v:shapes="_x0000_i1051"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1051"
+    DrawAspect="Content" ObjectID="_1575381012">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span>of the image
+  (equation 3) is</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span style='mso-tab-count:1'>��������� </span><span
+  style='mso-spacerun:yes'>� </span><span style='mso-tab-count:1'>����������� </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1052" type="#_x0000_t75" style='width:285pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image060.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=380 height=31
+  src="m31_converging_files/image062.png" v:shapes="_x0000_i1052"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1052"
+    DrawAspect="Content" ObjectID="_1575381013">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  lang=EN-AU><span
+  style='mso-spacerun:yes'>������������������������������������������ </span><span
+  style='color:#7030A0'>image is inverted<o:p></o:p></span></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ansi-language:
+  EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_16"
+   o:spid="_x0000_i1339" type="#_x0000_t75" style='width:445.5pt;height:308.25pt;
+   visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image061.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=594 height=411
+  src="m31_converging_files/image063.png" v:shapes="Picture_x0020_16"><![endif]></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;text-indent:-1.0cm;line-height:115%;tab-stops:1.0cm'><span
+  lang=EN-AU><span style='mso-tab-count:1'>��������� </span>Fig. 4. Ray tracing
+  can be used to estimate the location of the image of an object.</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'>Object
+  placed within the focal length of the lens</span></b><span lang=EN-AU
+  style='color:#7030A0'><span style='mso-spacerun:yes'>�� </span></span><span
+  lang=EN-AU><span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1054" type="#_x0000_t75" style='width:50.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image064.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=67 height=31
+  src="m31_converging_files/image066.png" v:shapes="_x0000_i1054"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1054"
+    DrawAspect="Content" ObjectID="_1575381014">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%;
+  tab-stops:1.0cm'><span style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_23" o:spid="_x0000_i1338" type="#_x0000_t75" style='width:427.5pt;
+   height:354pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image065.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=570 height=472
+  src="m31_converging_files/image067.png" v:shapes="Picture_x0020_23"><![endif]></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%;tab-stops:1.0cm'><span lang=EN-AU>Fig.
+  5.<span style='mso-spacerun:yes'>�� </span><b style='mso-bidi-font-weight:
+  normal'><span style='color:#7030A0'>Simple magnifying glass</span></b><span
+  style='color:#7030A0'> </span>- object placed within the focal length of a
+  converging lens produces a virtual, upright and magnified image.</span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><span style='mso-tab-count:1'>��������� </span><span
+  style='position:relative;top:47.0pt;mso-text-raise:-47.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1111" type="#_x0000_t75" style='width:377.25pt;height:102.75pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image068.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=503 height=137
+  src="m31_converging_files/image069.png" v:shapes="_x0000_i1111"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1111"
+    DrawAspect="Content" ObjectID="_1575381015">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><span style='position:relative;top:7.0pt;mso-text-raise:
+  -7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1060" type="#_x0000_t75"
+   style='width:44.25pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image070.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=59 height=31
+  src="m31_converging_files/image044.png" v:shapes="_x0000_i1060"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1060"
+    DrawAspect="Content" ObjectID="_1575381016">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1061" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1061"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1061"
+    DrawAspect="Content" ObjectID="_1575381017">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>virtual image</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1062" type="#_x0000_t75" style='width:42.75pt;height:18pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image073.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=57 height=24
+  src="m31_converging_files/image074.png" v:shapes="_x0000_i1062"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1062"
+    DrawAspect="Content" ObjectID="_1575381018">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1063" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1063"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1063"
+    DrawAspect="Content" ObjectID="_1575381019">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>upright image</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1064" type="#_x0000_t75" style='width:48.75pt;height:27pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image075.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=65 height=36
+  src="m31_converging_files/image076.png" v:shapes="_x0000_i1064"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1064"
+    DrawAspect="Content" ObjectID="_1575381020">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1065" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1065"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1065"
+    DrawAspect="Content" ObjectID="_1575381021">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>image height
+  greater than object height</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'>Object
+  placed at the focus of the lens</span></b><span lang=EN-AU style='color:#7030A0'><span
+  style='mso-spacerun:yes'>�� </span></span><span lang=EN-AU><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1066" type="#_x0000_t75" style='width:51pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image077.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=68 height=31
+  src="m31_converging_files/image078.png" v:shapes="_x0000_i1066"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1066"
+    DrawAspect="Content" ObjectID="_1575381022">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%;
+  tab-stops:1.0cm'><span style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_27" o:spid="_x0000_i1337" type="#_x0000_t75" style='width:424.5pt;
+   height:327pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image080.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=566 height=436
+  src="m31_converging_files/image079.png" v:shapes="Picture_x0020_27"><![endif]></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:150%;tab-stops:1.0cm'><span lang=EN-AU>Fig.
+  6.<span style='mso-spacerun:yes'>�� </span>Object placed in the focal plane.
+  The virtual image is at infinity.</span></p>
+  <p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><span style='position:relative;top:47.0pt;mso-text-raise:
+  -47.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1323" type="#_x0000_t75"
+   style='width:282.75pt;height:102.75pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image081.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=377 height=137
+  src="m31_converging_files/image082.png" v:shapes="_x0000_i1323"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1323"
+    DrawAspect="Content" ObjectID="_1575381023">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>������� </span></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU style='color:#7030A0'><span
+  style='mso-spacerun:yes'>�</span></span><span lang=EN-AU><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1072" type="#_x0000_t75" style='width:44.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image070.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=59 height=31
+  src="m31_converging_files/image044.png" v:shapes="_x0000_i1072"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1072"
+    DrawAspect="Content" ObjectID="_1575381025">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1073" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1073"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1073"
+    DrawAspect="Content" ObjectID="_1575381026">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1074" type="#_x0000_t75" style='width:66pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image083.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=88 height=31
+  src="m31_converging_files/image084.png" v:shapes="_x0000_i1074"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1074"
+    DrawAspect="Content" ObjectID="_1575381027">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>������</span>virtual image
+  at infinity</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1075" type="#_x0000_t75" style='width:65.25pt;height:15pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image085.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=87 height=20
+  src="m31_converging_files/image086.png" v:shapes="_x0000_i1075"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1075"
+    DrawAspect="Content" ObjectID="_1575381028">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1076" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1076"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1076"
+    DrawAspect="Content" ObjectID="_1575381029">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>upright image and
+  infinite in height</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'>Object
+  placed at the focus of the lens</span></b><span lang=EN-AU style='color:#7030A0'><span
+  style='mso-spacerun:yes'>�� </span></span><span lang=EN-AU><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1077" type="#_x0000_t75" style='width:60pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image087.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=80 height=31
+  src="m31_converging_files/image088.png" v:shapes="_x0000_i1077"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1077"
+    DrawAspect="Content" ObjectID="_1575381030">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_31" o:spid="_x0000_i1336" type="#_x0000_t75" style='width:450.75pt;
+   height:297.75pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image091.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=601 height=397
+  src="m31_converging_files/image089.png" v:shapes="Picture_x0020_31"><![endif]></span></p>
+  <p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%;tab-stops:1.0cm'><span lang=EN-AU>Fig.
+  7.<span style='mso-spacerun:yes'>�� </span>The object distance is equal to
+  than twice the focal length<span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1079" type="#_x0000_t75" style='width:62.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image090.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=83 height=31
+  src="m31_converging_files/image092.png" v:shapes="_x0000_i1079"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1079"
+    DrawAspect="Content" ObjectID="_1575381031">
+   </o:OLEObject>
+  </xml><![endif]-->. The image is real, inverted and same height as object,
+  magnification <span style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1080" type="#_x0000_t75" style='width:45.75pt;height:27pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image093.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=61 height=36
+  src="m31_converging_files/image094.png" v:shapes="_x0000_i1080"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1080"
+    DrawAspect="Content" ObjectID="_1575381032">
+   </o:OLEObject>
+  </xml><![endif]-->.</span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><span style='mso-tab-count:1'>��������� </span></span><span
+  lang=EN-AU style='mso-bidi-font-family:Calibri'><span style='position:relative;
+  top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1325"
+   type="#_x0000_t75" style='width:270pt;height:48.75pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image095.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=360 height=65
+  src="m31_converging_files/image096.png" v:shapes="_x0000_i1325"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1325"
+    DrawAspect="Content" ObjectID="_1575381033">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU style='color:#7030A0'><span
+  style='mso-spacerun:yes'>������ </span></span><span lang=EN-AU><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1086" type="#_x0000_t75" style='width:57.75pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image097.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=77 height=31
+  src="m31_converging_files/image098.png" v:shapes="_x0000_i1086"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1086"
+    DrawAspect="Content" ObjectID="_1575381034">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1087" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1087"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1087"
+    DrawAspect="Content" ObjectID="_1575381035">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>real image</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='mso-spacerun:yes'>����� </span><span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1088"
+   type="#_x0000_t75" style='width:42.75pt;height:18pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image099.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=57 height=24
+  src="m31_converging_files/image100.png" v:shapes="_x0000_i1088"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1088"
+    DrawAspect="Content" ObjectID="_1575381036">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�����</span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1089" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1089"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1089"
+    DrawAspect="Content" ObjectID="_1575381037">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>inverted mage</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='mso-spacerun:yes'>����� </span><span style='position:relative;
+  top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1090"
+   type="#_x0000_t75" style='width:45.75pt;height:27pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image101.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=61 height=36
+  src="m31_converging_files/image094.png" v:shapes="_x0000_i1090"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1090"
+    DrawAspect="Content" ObjectID="_1575381038">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>��</span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1091" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1091"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1091"
+    DrawAspect="Content" ObjectID="_1575381039">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>image height equal
+  to object height</span></p>
+  <p class=MsoNormal style='tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='color:#7030A0'>Object
+  at</span></b><span lang=EN-AU style='color:#7030A0'><span
+  style='mso-spacerun:yes'>� </span></span><span lang=EN-AU><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1092" type="#_x0000_t75" style='width:60pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image102.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=80 height=31
+  src="m31_converging_files/image103.png" v:shapes="_x0000_i1092"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1092"
+    DrawAspect="Content" ObjectID="_1575381040">
+   </o:OLEObject>
+  </xml><![endif]--></span></p>
+  <p class=MsoNormal align=center style='margin-right:28.25pt;text-align:center;
+  line-height:150%;tab-stops:1.0cm'><span style='mso-ansi-language:EN-US;
+  mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_29" o:spid="_x0000_i1335"
+   type="#_x0000_t75" style='width:450.75pt;height:324pt;visibility:visible;
+   mso-wrap-style:square'>
+   <v:imagedata src="m31_converging_files/image106.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=601 height=432
+  src="m31_converging_files/image104.png" v:shapes="Picture_x0020_29"><![endif]></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%;tab-stops:1.0cm'><span lang=EN-AU>Fig.
+  8.<span style='mso-spacerun:yes'>�� </span>The object distance is greater
+  than twice the focal length<span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1094" type="#_x0000_t75" style='width:62.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image105.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=83 height=31
+  src="m31_converging_files/image107.png" v:shapes="_x0000_i1094"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1094"
+    DrawAspect="Content" ObjectID="_1575381041">
+   </o:OLEObject>
+  </xml><![endif]-->. The image is real, inverted and reduced in height,
+  magnification <span style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1095" type="#_x0000_t75" style='width:45pt;height:27pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image108.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=60 height=36
+  src="m31_converging_files/image109.png" v:shapes="_x0000_i1095"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1095"
+    DrawAspect="Content" ObjectID="_1575381042">
+   </o:OLEObject>
+  </xml><![endif]-->.</span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%;tab-stops:1.0cm'><span lang=EN-AU
+  style='mso-bidi-font-family:Calibri'><span style='position:relative;
+  top:47.0pt;mso-text-raise:-47.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1334"
+   type="#_x0000_t75" style='width:270pt;height:102.75pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image110.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=360 height=137
+  src="m31_converging_files/image111.png" v:shapes="_x0000_i1334"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1334"
+    DrawAspect="Content" ObjectID="_1575381043">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%;tab-stops:1.0cm'><span lang=EN-AU
+  style='mso-bidi-font-family:Calibri'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.25pt;margin-bottom:
+  8.0pt;margin-left:1.0cm;line-height:115%;tab-stops:1.0cm'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:28.25pt;line-height:150%;tab-stops:
+  1.0cm'><span lang=EN-AU style='color:#7030A0'><span
+  style='mso-spacerun:yes'>�</span></span><span lang=EN-AU><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1101" type="#_x0000_t75" style='width:44.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image112.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=59 height=31
+  src="m31_converging_files/image042.png" v:shapes="_x0000_i1101"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1101"
+    DrawAspect="Content" ObjectID="_1575381044">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1102" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1102"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1102"
+    DrawAspect="Content" ObjectID="_1575381045">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>real image</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1103" type="#_x0000_t75" style='width:42.75pt;height:18pt'
+   o:ole="">
+   <v:imagedata src="m31_converging_files/image099.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=57 height=24
+  src="m31_converging_files/image100.png" v:shapes="_x0000_i1103"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1103"
+    DrawAspect="Content" ObjectID="_1575381046">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1104" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1104"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1104"
+    DrawAspect="Content" ObjectID="_1575381047">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>inverted mage</span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU><span
+  style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1105" type="#_x0000_t75" style='width:45pt;height:27pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image113.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=60 height=36
+  src="m31_converging_files/image109.png" v:shapes="_x0000_i1105"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1105"
+    DrawAspect="Content" ObjectID="_1575381048">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1106" type="#_x0000_t75" style='width:21pt;height:15pt' o:ole="">
+   <v:imagedata src="m31_converging_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=28 height=20
+  src="m31_converging_files/image072.png" v:shapes="_x0000_i1106"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1106"
+    DrawAspect="Content" ObjectID="_1575381049">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���</span>image height less
+  than to object height<br clear=all style='mso-special-character:line-break;
+  page-break-before:always'>
+  </span><b style='mso-bidi-font-weight:normal'><span style='color:#0000CC;
+  mso-ansi-language:EN-US'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><span style='font-family:"Verdana",sans-serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><span lang=EN-AU
+style='font-size:11.0pt;line-height:105%'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=841 valign=top style='width:630.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-AU
+  style='font-size:11.0pt;line-height:115%;mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-AU
+  style='font-size:11.0pt;line-height:115%;mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi'><a
+  href="spHome.htm"><span
+  style='font-size:16.0pt;line-height:115%;mso-bidi-font-family:Calibri;
+  mso-bidi-theme-font:minor-latin;color:blue'>VISUAL PHYSICS ONLINE</span></a></span><span
+  class=MsoHyperlink><span lang=EN-AU style='font-size:16.0pt;line-height:115%;
+  color:blue'><o:p></o:p></span></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU
+  style='font-size:16.0pt;line-height:150%'>If you have any feedback, comments,
+  suggestions or corrections please email:</span><span lang=EN-AU
+  style='font-size:11.0pt;line-height:150%;mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU
+  style='font-size:16.0pt;line-height:150%'>Ian Cooper<span
+  style='mso-spacerun:yes'>�� </span>School of Physics<span
+  style='mso-spacerun:yes'>�� </span>University of Sydney <o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span lang=EN-AU
+  style='font-size:16.0pt;line-height:150%'>ian.cooper@sydney.edu.au<b
+  style='mso-bidi-font-weight:normal'><span style='color:#385623;mso-themecolor:
+  accent6;mso-themeshade:128'><o:p></o:p></span></b></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-AU style='mso-bidi-font-size:
+  11.0pt;line-height:150%;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+  minor-bidi;color:#843C0C;mso-themecolor:accent2;mso-themeshade:128;
+  mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:normal'><span
+  lang=EN-AU style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-family:
+  "Times New Roman";mso-bidi-theme-font:minor-bidi;color:#7030A0'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><span lang=EN-AU
+style='font-size:11.0pt;line-height:105%;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

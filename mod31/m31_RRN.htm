@@ -1,0 +1,2350 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<base target="_blank">
+<link rel=File-List href="m31_RRN_files/filelist.xml">
+<link rel=Edit-Time-Data href="m31_RRN_files/editdata.mso">
+<link rel=OLE-Object-Data href="m31_RRN_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Reflection Refraction</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ian Cooper</o:Author>
+  <o:Keywords>reflection, refraction, snell's Law, refractive index, waves, wave motion, school physics, high school physics, HSC physics, physics on line</o:Keywords>
+  <o:Description>m31.ppt&#13;&#10;mp/mscripts&#13;&#10;mw_refraction_01.m  wm_refraction_02.m</o:Description>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Owner</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>2995</o:TotalTime>
+  <o:Created>2017-05-30T05:54:00Z</o:Created>
+  <o:LastSaved>2020-04-20T05:51:00Z</o:LastSaved>
+  <o:Pages>13</o:Pages>
+  <o:Words>1622</o:Words>
+  <o:Characters>9252</o:Characters>
+  <o:Category>waves</o:Category>
+  <o:Lines>77</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>10853</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="m31_RRN_files/themedata.thmx">
+<link rel=colorSchemeMapping href="m31_RRN_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-AU</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="0" Name="footer"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610610945 1073750107 16 0 415 0;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-noshow:yes;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 234.0pt right 468.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1146048869;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1633386508 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1514153143;
+	mso-list-type:hybrid;
+	mso-list-template-ids:263987978 75795548 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:"\(%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:70.5pt;
+	text-indent:-36.0pt;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:88.5pt;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:124.5pt;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:160.5pt;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:196.5pt;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:232.5pt;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:268.5pt;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:304.5pt;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:340.5pt;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-AU link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:28.85pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.7pt;mso-row-margin-right:
+  .35pt'>
+  <td width=192 style='width:144.3pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+   coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+   filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t75"
+   style='position:absolute;margin-left:63.85pt;margin-top:118.65pt;width:115.05pt;
+   height:113.25pt;z-index:251664384;visibility:visible;mso-wrap-style:square;
+   mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+   mso-wrap-distance-bottom:0;mso-position-horizontal:right;
+   mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+   mso-position-vertical-relative:text;mso-width-percent:0;
+   mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin'>
+   <v:imagedata src="m31_RRN_files/image001.png" o:title="" croptop="3778f"
+    cropbottom="9009f" cropleft="12649f" cropright="12867f"/>
+   <w:wrap type="square"/>
+  </v:shape><![endif]--><![if !vml]><img width=153 height=151
+  src="m31_RRN_files/image002.jpg" align=right hspace=12 v:shapes="Picture_x0020_1"><![endif]><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;font-family:
+  "Bookman Old Style","serif";mso-bidi-font-family:"Times New Roman";
+  color:#CC3300'><span style='mso-spacerun:yes'>�</span><o:p></o:p></span></b></p>
+  </td>
+  <td width=572 valign=top style='width:429.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.7pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;font-family:"Bookman Old Style","serif";mso-bidi-font-family:
+  "Times New Roman";color:#CC3300'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;font-family:"Bookman Old Style","serif";mso-bidi-font-family:
+  "Times New Roman";color:#CC3300'><span style='mso-spacerun:yes'>�</span></span></b><span
+  style='color:blue'><a
+  href="spHome.htm"><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;font-family:
+  "Bookman Old Style","serif";mso-bidi-font-family:"Times New Roman";
+  color:blue'>VISUAL PHYSICS ONLINE</span></b></a></span><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:16.0pt;font-family:"Bookman Old Style","serif";
+  mso-bidi-font-family:"Times New Roman";color:#0000CC'><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;font-family:"Bookman Old Style","serif";mso-bidi-font-family:
+  "Times New Roman";color:#CC0066'><span style='mso-spacerun:yes'>�</span></span></b><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:20.0pt;font-family:
+  "Bookman Old Style","serif";mso-bidi-font-family:"Times New Roman";
+  color:#CC0066'><span style='mso-spacerun:yes'>�</span><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";
+  mso-bidi-font-family:"Times New Roman";color:#CC3300'>WAVES <o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";
+  mso-bidi-font-family:"Times New Roman";color:#CC3300'><span
+  style='mso-spacerun:yes'>�� </span>REFLECTION<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";
+  mso-bidi-font-family:"Times New Roman";color:#CC3300'><span
+  style='mso-spacerun:yes'>����� </span>REFRACTION<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";
+  mso-bidi-font-family:"Times New Roman";color:#CC3300'><span
+  style='mso-spacerun:yes'>��������� </span></span></b><span lang=EN-US
+  style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p></o:p></span></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm'
+  width=0><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:12.7pt'>
+  <td width=765 colspan=3 valign=top style='width:573.7pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.7pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:3.0cm'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:20.0pt;font-family:"Bookman Old Style","serif";mso-bidi-font-family:
+  "Times New Roman";color:#0000CC'><span style='mso-spacerun:yes'>�</span><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:0cm'><b><span
+  style='font-size:16.0pt;mso-bidi-font-size:13.0pt;line-height:150%;
+  font-family:"Bookman Old Style","serif";color:#7030A0'>REFLECTION and
+  REFRACTION<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'>If a wave meets a </span><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:yes'>discontinuity</span></b><span
+  style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'> where there is
+  a change in speed in going from one medium to another, the energy carried by
+  the wave will be reflected backed into the first medium and transferred into
+  the second medium. The original wave is known as the </span><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  13.0pt;line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:
+  yes'>incident wave</span></b><span style='font-size:14.0pt;mso-bidi-font-size:
+  13.0pt;line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'>. At the discontinuity a </span><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:yes'>reflected
+  wave</span></b><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:
+  yes'> </span><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'>and a </span><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:yes'>transmitted
+  wave</span></b><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:
+  yes'> </span><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'>(</span><b style='mso-bidi-font-weight:normal'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#7030A0;mso-no-proof:yes'>refracted wave</span></b><span
+  style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'>) are formed.
+  <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_9" o:spid="_x0000_i1078" type="#_x0000_t75" style='width:501.75pt;
+   height:138pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image003.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=669 height=184
+  src="m31_RRN_files/image004.png" v:shapes="Picture_x0020_9"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'>Figure 1 shows a set of simulations for the
+  propagation of surface water waves.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1077" type="#_x0000_t75" style='width:283.5pt;height:283.5pt;
+   visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image005.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=378 height=378
+  src="m31_RRN_files/image005.gif" v:shapes="_x0000_i1077"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span style='mso-spacerun:yes'>������
+  </span>Fig. 1a.<span style='mso-spacerun:yes'>�� </span>Propagation of a [2D]
+  wave in a uniform medium with<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span
+  style='mso-spacerun:yes'>�������������������� </span>no discontinuties.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1076" type="#_x0000_t75" style='width:283.5pt;height:283.5pt;
+   visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image006.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=378 height=378
+  src="m31_RRN_files/image006.gif" v:shapes="_x0000_i1076"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span style='mso-spacerun:yes'>������
+  </span>Fig 1b.<span style='mso-spacerun:yes'>��� </span>Propagation of a [2D]
+  wave encountering a discontinuity<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span
+  style='mso-spacerun:yes'>������������������� </span>(normal incidentce). Only
+  the incident and refracted<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span
+  style='mso-spacerun:yes'>�������������������� </span>waves are shown. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_5" o:spid="_x0000_i1075" type="#_x0000_t75" style='width:283.5pt;
+   height:283.5pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image007.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=378 height=378
+  src="m31_RRN_files/image007.gif" v:shapes="Picture_x0020_5"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span style='mso-spacerun:yes'>������
+  </span>Fig 1c.<span style='mso-spacerun:yes'>��� </span>Propagation of a [2D]
+  wave encountering a discontinuity<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span
+  style='mso-spacerun:yes'>������������������� </span>(oblique incidence). Only
+  the incident and refracted<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span
+  style='mso-spacerun:yes'>�������������������� </span>waves are shown. The
+  refracted wave propagates in a<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  115%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:115%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span
+  style='mso-spacerun:yes'>�������������������� </span>different direction to
+  the incident wave.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'>A good example of reflection of sound is an </span><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  13.0pt;line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#7030A0;mso-no-proof:
+  yes'>echo</span></b><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'>. The fraction of energy carried by the echo can be almost as large as
+  the energy of the incident wave if the surface is rigid and smooth.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1074" type="#_x0000_t75" style='width:381.75pt;height:159pt;
+   visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image008.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=509 height=212
+  src="m31_RRN_files/image009.png" v:shapes="_x0000_i1074"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span style='mso-spacerun:yes'>���������
+  </span><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span style='mso-spacerun:yes'>������
+  </span>Fig. 2.<span style='mso-spacerun:yes'>�� </span>The reflection of a
+  sound wave can produce an echo. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'>From smooth surfaces, waves are reflected
+  such that the angle of incidence </span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+   type="#_x0000_t75" style='width:14.25pt;height:21.75pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image010.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=19 height=29
+  src="m31_RRN_files/image011.png" v:shapes="_x0000_i1025"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+    DrawAspect="Content" ObjectID="_1648903118">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'><span style='mso-spacerun:yes'>�</span>is equal to the angle of
+  reflection </span><span style='position:relative;top:7.0pt;mso-text-raise:
+  -7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+   style='width:15.75pt;height:21.75pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image012.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=29
+  src="m31_RRN_files/image013.png" v:shapes="_x0000_i1026"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+    DrawAspect="Content" ObjectID="_1648903119">
+   </o:OLEObject>
+  </xml><![endif]-->.<span style='font-size:14.0pt;mso-bidi-font-size:13.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'><span style='mso-spacerun:yes'>� </span><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  14.0pt;mso-bidi-font-size:13.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI";
+  color:#111111;mso-no-proof:yes'><span style='mso-spacerun:yes'>� </span><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.0pt;margin-bottom:.0001pt;line-height:150%;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:14.0pt;mso-bidi-font-size:
+  13.0pt;line-height:150%;font-family:"Verdana","sans-serif";mso-fareast-font-family:
+  "Times New Roman";mso-bidi-font-family:"Segoe UI";color:#111111;mso-no-proof:
+  yes'>(1)<span style='mso-spacerun:yes'>����� </span></span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:44.25pt;height:21.75pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image014.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=59 height=29
+  src="m31_RRN_files/image015.png" v:shapes="_x0000_i1027"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+    DrawAspect="Content" ObjectID="_1648903120">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>���������������������</span><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif";color:#7030A0'>LAW
+  OF REFLECTION</span></b><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif";color:#7030A0'>
+  for a smooth surface</span><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:39.0pt;margin-bottom:.0001pt;line-height:150%;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'>The Law of Refraction applies to sound, light and
+  all other forms of waves.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_10" o:spid="_x0000_i1073"
+   type="#_x0000_t75" style='width:463.5pt;height:163.5pt;visibility:visible;
+   mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image016.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=618 height=218
+  src="m31_RRN_files/image017.png" v:shapes="Picture_x0020_10"><![endif]></span><span
+  lang=EN-US style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%;mso-layout-grid-align:none;text-autospace:
+  none'><span lang=EN-US style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%;mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>��������� </span>Fig.
+  3.<span style='mso-spacerun:yes'>�� </span>Reflection from a smooth surface.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=747 valign=top style='width:559.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>In a room with very reflective surfaces,
+  sounds can become garbled. When sounds undergo multiple reflections, and
+  persist after the sound has ceased emitting, we hear <span style='color:#7030A0'>reverberations</span>.
+  If the surfaces are too absorbent, the sound level will be low and sounds
+  will be dull and lifeless. In the design of concert halls, a balance must be
+  achieved between reverberation and absorption. Highly reflective surfaces are
+  often used to direct sound from the stage to the audience. <o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-right:.15pt;text-align:center;
+  line-height:150%'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_6" o:spid="_x0000_i1072" type="#_x0000_t75" style='width:383.25pt;
+   height:182.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image018.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=511 height=243
+  src="m31_RRN_files/image019.png" v:shapes="Picture_x0020_6"><![endif]></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>The Law of Reflection is also obeyed by
+  particles reflected off straight smooth surfaces.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-right:.15pt;text-align:center;
+  line-height:150%'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_13" o:spid="_x0000_i1071" type="#_x0000_t75" style='width:443.25pt;
+   height:213pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image020.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=591 height=284
+  src="m31_RRN_files/image021.png" v:shapes="Picture_x0020_13"><![endif]></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=747 valign=top style='width:559.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;line-height:
+  150%;font-family:"Bookman Old Style","serif";color:#7030A0'>LAW OF REFRACTION<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>When any
+  [2D] or [3D] wave traveling in one medium crosses a boundary into a medium where
+  its velocity is different, the transmitted wave may move on in a different
+  direction to the original the incident wave as shown in figure 1. This
+  phenomenon is called <b style='mso-bidi-font-weight:normal'><span
+  style='color:#7030A0'>refraction</span></b>. <o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>The
+  refractive index </span><span style='position:relative;top:3.0pt;mso-text-raise:
+  -3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+   style='width:12.75pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image022.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=17 height=19
+  src="m31_RRN_files/image023.png" v:shapes="_x0000_i1028"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1028"
+    DrawAspect="Content" ObjectID="_1648903121">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>of a medium
+  determines the propagation speed </span><span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+   type="#_x0000_t75" style='width:12pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image024.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=19
+  src="m31_RRN_files/image025.png" v:shapes="_x0000_i1029"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1029"
+    DrawAspect="Content" ObjectID="_1648903122">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>of the wave.
+  For a wave travelling from medium 1 into medium 2, then the ratio of the
+  refractive indices is equal to the inverse of the velocity ratios<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><span
+  style='mso-spacerun:yes'>������ </span>(2)<span
+  style='mso-spacerun:yes'>������� </span></span><span style='position:relative;
+  top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+   type="#_x0000_t75" style='width:57pt;height:48.75pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image026.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=76 height=65
+  src="m31_RRN_files/image027.png" v:shapes="_x0000_i1030"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+    DrawAspect="Content" ObjectID="_1648903123">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>����</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='mso-spacerun:yes'>�</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='mso-spacerun:yes'>� </span><span style='font-size:14.0pt;mso-bidi-font-size:
+  12.0pt;line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>For
+  electromagnetic radiation, the speed of light in a vacuum is always given by
+  the <span class=GramE>symbol </span></span><span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1031"
+   type="#_x0000_t75" style='width:12pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image028.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=19
+  src="m31_RRN_files/image029.png" v:shapes="_x0000_i1031"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+    DrawAspect="Content" ObjectID="_1648903124">
+   </o:OLEObject>
+  </xml><![endif]-->.<span style='mso-spacerun:yes'>� </span><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>In a medium,
+  where the speed of light </span><span style='position:relative;top:3.0pt;
+  mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+   style='width:12pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image030.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=19
+  src="m31_RRN_files/image025.png" v:shapes="_x0000_i1032"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+    DrawAspect="Content" ObjectID="_1648903125">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>is less than
+  </span><span style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1033" type="#_x0000_t75" style='width:12pt;height:14.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image028.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=19
+  src="m31_RRN_files/image029.png" v:shapes="_x0000_i1033"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+    DrawAspect="Content" ObjectID="_1648903126">
+   </o:OLEObject>
+  </xml><![endif]-->, <span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'>the speed </span><span style='position:relative;top:3.0pt;
+  mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+   style='width:12pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image030.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=19
+  src="m31_RRN_files/image025.png" v:shapes="_x0000_i1034"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+    DrawAspect="Content" ObjectID="_1648903127">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>is
+  determined by the refractive index </span><span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1035"
+   type="#_x0000_t75" style='width:12.75pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image022.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=17 height=19
+  src="m31_RRN_files/image023.png" v:shapes="_x0000_i1035"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1035"
+    DrawAspect="Content" ObjectID="_1648903128">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>of the
+  medium<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><span
+  style='mso-spacerun:yes'>����� </span>(3)<span
+  style='mso-spacerun:yes'>������ </span></span><span style='position:relative;
+  top:17.0pt;mso-text-raise:-17.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1036"
+   type="#_x0000_t75" style='width:249.75pt;height:45pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image031.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=333 height=60
+  src="m31_RRN_files/image032.png" v:shapes="_x0000_i1036"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1036"
+    DrawAspect="Content" ObjectID="_1648903130">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>������</span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><span
+  style='mso-spacerun:yes'>��������������������������������� </span><span
+  style='mso-spacerun:yes'>�����������������</span><span style='font-size:14.0pt;
+  mso-bidi-font-size:11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>light<span
+  style='mso-spacerun:yes'>�� </span></span><span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1037"
+   type="#_x0000_t75" style='width:12pt;height:14.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image028.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=19
+  src="m31_RRN_files/image029.png" v:shapes="_x0000_i1037"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1037"
+    DrawAspect="Content" ObjectID="_1648903131">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>= 2.9979x10<sup>8</sup><span
+  style='mso-spacerun:yes'>� </span>m.s<sup>-1</sup><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>The
+  direction of propagation of a wave is given by a straight arrow called a <b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>ray</span></b>.
+  The ray is drawn at right angles to the wavefront of the wave. The angles
+  measured between the ray and the normal of the discontinuity define the
+  angles of incidence, reflection and refraction.<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>Incident
+  wave (medium 1)<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><span
+  style='mso-spacerun:yes'>������ </span>refractive index </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1038" type="#_x0000_t75" style='width:15.75pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image033.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=31
+  src="m31_RRN_files/image034.png" v:shapes="_x0000_i1038"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+    DrawAspect="Content" ObjectID="_1648903132">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><span style='mso-spacerun:yes'>���</span>speed </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1039" type="#_x0000_t75" style='width:15pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image035.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=20 height=31
+  src="m31_RRN_files/image036.png" v:shapes="_x0000_i1039"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+    DrawAspect="Content" ObjectID="_1648903133">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><span style='mso-spacerun:yes'>�����</span>angle of incidence </span><i
+  style='mso-bidi-font-style:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  12.0pt;line-height:150%;font-family:Symbol;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-char-type:symbol;mso-symbol-font-family:
+  Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>q</span></span></i><sub><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>1</span></sub><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>Reflected
+  wave (medium 1)<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><span
+  style='mso-spacerun:yes'>����� </span>refractive index </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1040" type="#_x0000_t75" style='width:15.75pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image037.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=31
+  src="m31_RRN_files/image034.png" v:shapes="_x0000_i1040"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+    DrawAspect="Content" ObjectID="_1648903134">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><span style='mso-spacerun:yes'>����</span>speed </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1041" type="#_x0000_t75" style='width:15pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image038.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=20 height=31
+  src="m31_RRN_files/image036.png" v:shapes="_x0000_i1041"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+    DrawAspect="Content" ObjectID="_1648903135">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><span style='mso-spacerun:yes'>�����</span>angle of reflection </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1042" type="#_x0000_t75" style='width:24pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image039.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=32 height=31
+  src="m31_RRN_files/image040.png" v:shapes="_x0000_i1042"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+    DrawAspect="Content" ObjectID="_1648903136">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>Refracted
+  wave (medium2)<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><span
+  style='mso-spacerun:yes'>���� </span>refractive index </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1043" type="#_x0000_t75" style='width:18pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image041.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=24 height=31
+  src="m31_RRN_files/image042.png" v:shapes="_x0000_i1043"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+    DrawAspect="Content" ObjectID="_1648903137">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><span style='mso-spacerun:yes'>����</span>speed </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1044" type="#_x0000_t75" style='width:17.25pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image043.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=31
+  src="m31_RRN_files/image044.png" v:shapes="_x0000_i1044"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+    DrawAspect="Content" ObjectID="_1648903138">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><span style='mso-spacerun:yes'>����</span>angle of refraction </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1045" type="#_x0000_t75" style='width:18pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image045.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=24 height=31
+  src="m31_RRN_files/image046.png" v:shapes="_x0000_i1045"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1045"
+    DrawAspect="Content" ObjectID="_1648903139">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+  Calibri'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 180.0pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-bidi-font-family:Calibri'>The
+  direction in which the refracted ray travels is determined by <b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>Snell�s Law</span></b><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>������� </span>(4)<span
+  style='mso-spacerun:yes'>������� </span></span><span style='position:relative;
+  top:87.0pt;mso-text-raise:-87.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1046"
+   type="#_x0000_t75" style='width:135.75pt;height:183pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image047.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=181 height=244
+  src="m31_RRN_files/image048.png" v:shapes="_x0000_i1046"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1046"
+    DrawAspect="Content" ObjectID="_1648903140">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�������������</span><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif";color:#7030A0'>Snell�s
+  Law of Refraction</span></b><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;color:#7030A0'><span style='mso-spacerun:yes'>�
+  </span><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  color:#7030A0'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  color:#7030A0'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  color:#7030A0'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>and for the reflection<o:p></o:p></span></p>
+  <p class=MsoListParagraph style='margin-left:70.5pt;mso-add-space:auto;
+  text-indent:-36.0pt;line-height:150%;mso-list:l1 level1 lfo2;tab-stops:1.0cm 70.9pt'><![if !supportLists]><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana'><span
+  style='mso-list:Ignore'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='mso-spacerun:yes'>�����</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+   type="#_x0000_t75" style='width:54.75pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image049.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=73 height=31
+  src="m31_RRN_files/image050.png" v:shapes="_x0000_i1047"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1047"
+    DrawAspect="Content" ObjectID="_1648903141">
+   </o:OLEObject>
+  </xml><![endif]--><span
+  style='mso-spacerun:yes'>��������������������������</span><b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>Law of
+  Reflection</span></b></span><span style='font-size:14.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%;
+  tab-stops:1.0cm 70.9pt'><span style='font-size:14.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_14" o:spid="_x0000_i1070" type="#_x0000_t75" style='width:533.25pt;
+   height:377.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image051.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=711 height=503
+  src="m31_RRN_files/image052.png" v:shapes="Picture_x0020_14"><![endif]></span><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>���� </span>Fig. 4.<span style='mso-spacerun:yes'>�
+  </span>Reflection and refraction at a discontinuity. When a wave<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>���� </span>travels into a medium of greater
+  refractive index, the wave slows<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>���� </span>down and bends towards the normal. A
+  wave that travels into a<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>���� </span>medium of smaller refractive index,
+  speeds up and the wave will bend<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>���� </span>away from the normal. If the velocity
+  increases, the refracted angle<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:115%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>���� </span>increases, and vice versa.<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>When
+  a wave passes into a medium of lower refractive index, the light bends away
+  from the normal. At a particular angle, the angle of refraction will be 90<sup>o</sup>
+  and the refracted ray would skim the surface. The incident angle at which
+  this occurs is called the <b style='mso-bidi-font-weight:normal'><span
+  style='color:#7030A0'>critical <span class=GramE>angle<span style='font-weight:
+  normal'> </span></span></span></b></span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1048"
+   type="#_x0000_t75" style='width:20.25pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image053.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=27 height=31
+  src="m31_RRN_files/image054.png" v:shapes="_x0000_i1048"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1048"
+    DrawAspect="Content" ObjectID="_1648903142">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif"'>. For angles of incident
+  less than the critical angle, there will be refracted and reflected rays. For
+  incident angles greater than the critical angle, there can be no refracted
+  ray at all and the wave is reflected � this effect is called <b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>total
+  internal reflection</span></b>. N.B. total internal reflection only occurs
+  where the medium beyond the discontinuity has a lower index of refraction.
+  The total internal reflection is the principle behind fibre optics. Light can
+  be transmitted along an optical fibre with almost zero energy loss. The light
+  travels down the fibre only making glancing collisions with the walls so that
+  total internal reflection occurs. Fibre-optic cabling is becoming more
+  important in telecommunications (roll-out of the NBN) and in medicine (clear
+  pictures of inside the body can be taken).<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%;
+  tab-stops:1.0cm 70.9pt'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_34" o:spid="_x0000_i1069" type="#_x0000_t75" style='width:534.75pt;
+   height:187.5pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image055.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=713 height=250
+  src="m31_RRN_files/image056.png" v:shapes="Picture_x0020_34"><![endif]></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:115%;
+  font-family:"Verdana","sans-serif"'><span style='mso-spacerun:yes'>������
+  </span>Fig. 5.<span style='mso-spacerun:yes'>� </span>total internal
+  reflection with tiny fibres makes it possible<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:115%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:115%;
+  font-family:"Verdana","sans-serif"'><span style='mso-spacerun:yes'>������
+  </span>to transmit light in complex paths with minimal loss. <o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:27.4pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=747 valign=top style='width:560.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif";color:#7030A0'>Sound waves</span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'> propagating through air are bent and
+  undergo <b style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>refraction</span></b>
+  when the air temperature varies (the higher the temperature, the greater the
+  speed of sound). On a warm day, the air near the ground may be appreciably
+  warmer than the rest of the air, so the speed of sound near the ground is
+  greater. The sound will be refracted and bent away from the ground resulting
+  in sound that does not seem to travel as far.<span style='mso-spacerun:yes'>�
+  </span>At night, the ground is cold and the speed of sound is less than the
+  speed further above the ground, resulting in the sound being bent towards the
+  ground. Sounds can be heard over considerably longer distances. N.B.
+  refraction is caused by difference in the speed of propagation of waves
+  (figure 6).<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-right:.15pt;text-align:center;
+  line-height:150%'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_11" o:spid="_x0000_i1068" type="#_x0000_t75" style='width:453.75pt;
+   height:197.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image057.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=605 height=263
+  src="m31_RRN_files/image058.png" v:shapes="Picture_x0020_11"><![endif]></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:115%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:115%;
+  font-family:"Verdana","sans-serif"'><span style='mso-spacerun:yes'>�������
+  </span>Fig. 6.<span style='mso-spacerun:yes'>�� </span>Refraction of sound
+  waves. Sound waves are bend in air<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:115%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:115%;
+  font-family:"Verdana","sans-serif"'><span style='mso-spacerun:yes'>�������
+  </span>of uneven temperatures.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>We hear thunder when the lightning is
+  close to us, but we often do not hear the thunder for distant lightning
+  because of refraction � sounds travel slower at higher altitudes and bends
+  away from the ground, so that we may not hear the thunder clap.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>Refraction leads to a bending of the
+  wavefronts when entering a new medium where the speed of the wave is
+  different. To see why more clearly, we can consider a solder analogy as shown
+  in figure 7. The solders are marching from firm ground (medium 1) into a
+  muddy region (medium 2). The solders that reach the mud first are slowed down
+  first and the row of solders bend. Look at figure 6 again � in warmer air,
+  part of the wavefront moves faster than in colder air, so the bending of the
+  wavefront is either away or towards the ground.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-right:.15pt;text-align:center;
+  line-height:150%'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_36" o:spid="_x0000_i1067" type="#_x0000_t75" style='width:503.25pt;
+   height:372pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image059.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=671 height=496
+  src="m31_RRN_files/image060.png" v:shapes="Picture_x0020_36"><![endif]></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><span style='mso-spacerun:yes'>���������
+  </span>Fig. 7.<span style='mso-spacerun:yes'>�� </span>Refraction: marching
+  solders analogy.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>The multiple reflections and refractions
+  of ultrasonic waves are used by doctors for generating images inside our
+  bodies. When high frequency (short wavelength) ultrasound enters the body, it
+  reflects more strongly from the outside of an organ than from its interior,
+  and an image of the organ is obtained.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-right:.15pt;text-align:center;
+  line-height:150%'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;
+  line-height:150%;font-family:"Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_12" o:spid="_x0000_i1066" type="#_x0000_t75" style='width:279pt;
+   height:199.5pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image061.png" o:title="" cropright="12158f"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=372 height=266
+  src="m31_RRN_files/image062.png" v:shapes="Picture_x0020_12"><![endif]></span><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'><span style='mso-spacerun:yes'>�������
+  </span>Fig. 8.<span style='mso-spacerun:yes'>�� </span>Image of a <span
+  class=SpellE>fetus</span> using short wavelength ultrasonic waves. </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=747 valign=top style='width:560.5pt;padding:0cm 5.4pt 0cm 5.4pt'></td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #833C0B .5pt;mso-border-themecolor:accent2;mso-border-themeshade:128;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #833C0B;mso-border-insideh-themecolor:accent2;mso-border-insideh-themeshade:
+ 128;mso-border-insidev:.5pt solid #833C0B;mso-border-insidev-themecolor:accent2;
+ mso-border-insidev-themeshade:128'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=747 valign=top style='width:559.95pt;border:solid #833C0B 1.0pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;mso-border-alt:solid #833C0B .5pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:14.0pt;line-height:105%;font-family:"Verdana","sans-serif";
+  color:#843C0C;mso-themecolor:accent2;mso-themeshade:128;mso-style-textfill-fill-color:
+  #843C0C;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=50000'>Thinking
+  Question:<span style='mso-spacerun:yes'>�� </span>PREDICT<span
+  style='mso-spacerun:yes'>�� </span>OBSERVE<span style='mso-spacerun:yes'>��
+  </span>EXPLAIN<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>The
+  refracted angle </span><span style='position:relative;top:7.0pt;mso-text-raise:
+  -7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1049" type="#_x0000_t75"
+   style='width:18pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image063.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=24 height=31
+  src="m31_RRN_files/image046.png" v:shapes="_x0000_i1049"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1049"
+    DrawAspect="Content" ObjectID="_1648903143">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'><span style='mso-spacerun:yes'>�</span>is predicted
+  using equation 4 (review figure 4)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>������ </span>(4)<span
+  style='mso-spacerun:yes'>������ </span></span><span style='position:relative;
+  top:23.0pt;mso-text-raise:-23.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1050"
+   type="#_x0000_t75" style='width:231pt;height:54.75pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image064.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=308 height=73
+  src="m31_RRN_files/image065.png" v:shapes="_x0000_i1050"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1050"
+    DrawAspect="Content" ObjectID="_1648903144">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:#7030A0'>Predict</span><span style='font-size:14.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'> how the refraction angle </span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1051" type="#_x0000_t75" style='width:18pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image066.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=24 height=31
+  src="m31_RRN_files/image046.png" v:shapes="_x0000_i1051"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1051"
+    DrawAspect="Content" ObjectID="_1648903145">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>��</span><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>changes
+  for variations <span class=GramE>in </span></span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1052"
+   type="#_x0000_t75" style='width:15.75pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image067.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=31
+  src="m31_RRN_files/image068.png" v:shapes="_x0000_i1052"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1052"
+    DrawAspect="Content" ObjectID="_1648903146">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'>, </span><span style='position:relative;top:7.0pt;
+  mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1053" type="#_x0000_t75"
+   style='width:15.75pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image069.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=21 height=31
+  src="m31_RRN_files/image034.png" v:shapes="_x0000_i1053"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1053"
+    DrawAspect="Content" ObjectID="_1648903147">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'>, </span><span style='position:relative;top:7.0pt;
+  mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1054" type="#_x0000_t75"
+   style='width:18pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image070.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=24 height=31
+  src="m31_RRN_files/image042.png" v:shapes="_x0000_i1054"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1054"
+    DrawAspect="Content" ObjectID="_1648903148">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'>, </span><span style='position:relative;top:7.0pt;
+  mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1055" type="#_x0000_t75"
+   style='width:15pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image071.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=20 height=31
+  src="m31_RRN_files/image036.png" v:shapes="_x0000_i1055"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1055"
+    DrawAspect="Content" ObjectID="_1648903149">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'>, and </span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1056"
+   type="#_x0000_t75" style='width:17.25pt;height:23.25pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image072.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=23 height=31
+  src="m31_RRN_files/image044.png" v:shapes="_x0000_i1056"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1056"
+    DrawAspect="Content" ObjectID="_1648903150">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'><span style='mso-spacerun:yes'>�</span>by making a
+  series of scientific annotated diagrams.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:#7030A0'>Predict</span><span style='font-size:14.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'> how the relative intensity of the
+  reflected and refracted waves change as the parameters are changed. Think
+  about a golf ball or a stone skipping across the surface of water.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-right:.15pt;text-align:center;
+  line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_7"
+   o:spid="_x0000_i1065" type="#_x0000_t75" style='width:114.75pt;height:149.25pt;
+   visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image073.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=153 height=199
+  src="m31_RRN_files/image073.png" v:shapes="Picture_x0020_7"><![endif]></span><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>������� </span>Maximum value <span class=GramE>of </span></span><span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1057" type="#_x0000_t75" style='width:171pt;height:21.75pt'
+   o:ole="">
+   <v:imagedata src="m31_RRN_files/image074.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=228 height=29
+  src="m31_RRN_files/image075.png" v:shapes="_x0000_i1057"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1057"
+    DrawAspect="Content" ObjectID="_1648903151">
+   </o:OLEObject>
+  </xml><![endif]--><span style='font-size:14.0pt;line-height:150%;font-family:
+  "Verdana","sans-serif"'>. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>������ </span><span style='color:blue'><a
+  href="https://en.wikipedia.org/wiki/List_of_refractive_indices"><span
+  style='color:blue'>List of refractive indices</span></a><o:p></o:p></span></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:blue'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:#7030A0'>Observe<span style='mso-spacerun:yes'>���� </span></span><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:blue'><span style='mso-spacerun:yes'>��</span><a
+  href="http://ophysics.com/l7.html"><span style='color:blue'>Computer
+  Simulation: Reflection and Refraction</span></a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:blue'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  color:#7030A0'>Explain </span><span style='font-size:14.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>any discrepancies<span style='color:#7030A0'>.</span><span
+  style='color:blue'><o:p></o:p></span></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif"'><span
+  style='mso-spacerun:yes'>����� </span><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #833C0B .5pt;mso-border-themecolor:accent2;mso-border-themeshade:128;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ none;mso-border-insidev:none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=747 valign=top style='width:559.95pt;border:solid #833C0B 1.0pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;mso-border-alt:solid #833C0B .5pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif";color:#843C0C;
+  mso-themecolor:accent2;mso-themeshade:128;mso-style-textfill-fill-color:#843C0C;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=50000'>Exercise<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>Examine the animations show in figure 1
+  carefully. From the animations, estimate (the dimensions of the square are
+  100 m x 100 m):<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpFirst style='margin-right:.15pt;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo4'><![if !supportLists]><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>Period and
+  frequency of the incident waves and refracted waves.<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-right:.15pt;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo4'><![if !supportLists]><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>Wavelengths of
+  incident waves and reflected waves.<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-right:.15pt;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo4'><![if !supportLists]><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>The speed of the
+  incident waves and reflected waves.<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-right:.15pt;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo4'><![if !supportLists]><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>The relative
+  refractive indices for the two media.<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-right:.15pt;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:150%;mso-list:l0 level1 lfo4'><![if !supportLists]><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif"'>For oblique
+  incidence, the angles of incidence and refraction. Check your answers using
+  Snell�s Law. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>Hint: use a sheet of thin paper to help
+  make your measurements off the screen.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #833C0B .5pt;mso-border-themecolor:accent2;mso-border-themeshade:128;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #833C0B;mso-border-insideh-themecolor:accent2;mso-border-insideh-themeshade:
+ 128;mso-border-insidev:.5pt solid #833C0B;mso-border-insidev-themecolor:accent2;
+ mso-border-insidev-themeshade:128'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=747 valign=top style='width:559.95pt;border:solid #833C0B 1.0pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;mso-border-alt:solid #833C0B .5pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;font-family:"Verdana","sans-serif";color:#843C0C;
+  mso-themecolor:accent2;mso-themeshade:128;mso-style-textfill-fill-color:#843C0C;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=50000'>Exercise<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  font-family:"Verdana","sans-serif"'>Carefully view the graphs and animations
+  below. Make a list of the terms, concepts and physical principles illustrated
+  in the figures.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_1" o:spid="_x0000_i1064" type="#_x0000_t75" style='width:5in;
+   height:5in;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image076.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=480 height=480
+  src="m31_RRN_files/image076.gif" v:shapes="Picture_x0020_1"><![endif]></span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_2" o:spid="_x0000_i1063" type="#_x0000_t75" style='width:431.25pt;
+   height:314.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image077.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=575 height=419
+  src="m31_RRN_files/image078.png" v:shapes="Picture_x0020_2"><![endif]></span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:29.65pt;margin-bottom:
+  0cm;margin-left:30.45pt;margin-bottom:.0001pt;line-height:150%'><span
+  lang=EN-GB style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+  150%;font-family:"Verdana","sans-serif";mso-ansi-language:EN-GB'>Propagation
+  of light from a medium of lower refractive index to a medium of higher
+  refractive <span class=GramE>index<span style='font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  "Times New Roman";mso-bidi-theme-font:minor-bidi'><span
+  style='mso-spacerun:yes'>� </span></span></span></span><span lang=EN-GB
+  style='font-size:16.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  mso-ansi-language:EN-GB'><span style='position:relative;top:8.0pt;mso-text-raise:
+  -8.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1058" type="#_x0000_t75"
+   style='width:57.75pt;height:24pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image079.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=77 height=32
+  src="m31_RRN_files/image080.png" v:shapes="_x0000_i1058"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1058"
+    DrawAspect="Content" ObjectID="_1648903152">
+   </o:OLEObject>
+  </xml><![endif]--></span><span lang=EN-GB style='mso-ansi-language:EN-GB'>.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:29.65pt;margin-bottom:
+  0cm;margin-left:30.45pt;margin-bottom:.0001pt;line-height:150%'><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:29.65pt;margin-bottom:
+  0cm;margin-left:30.45pt;margin-bottom:.0001pt;line-height:150%'><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:29.65pt;
+  margin-bottom:0cm;margin-left:30.45pt;margin-bottom:.0001pt;text-align:center;
+  line-height:150%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_4" o:spid="_x0000_i1062" type="#_x0000_t75" style='width:402.75pt;
+   height:5in;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image081.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=537 height=480
+  src="m31_RRN_files/image081.gif" v:shapes="Picture_x0020_4"><![endif]></span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:29.65pt;
+  margin-bottom:0cm;margin-left:30.45pt;margin-bottom:.0001pt;text-align:center;
+  line-height:150%'><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_3" o:spid="_x0000_i1061" type="#_x0000_t75" style='width:431.25pt;
+   height:314.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m31_RRN_files/image082.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=575 height=419
+  src="m31_RRN_files/image083.png" v:shapes="Picture_x0020_3"><![endif]></span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:29.65pt;margin-bottom:
+  0cm;margin-left:30.45pt;margin-bottom:.0001pt;line-height:150%'><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:29.65pt;margin-bottom:
+  0cm;margin-left:30.45pt;margin-bottom:.0001pt;line-height:150%'><span
+  lang=EN-GB style='font-size:14.0pt;line-height:150%;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-GB'>Propagation of light from a medium of higher
+  refractive index to a medium of lower refractive <span class=GramE>index<span
+  style='mso-spacerun:yes'>� </span></span><span style='position:relative;
+  top:8.0pt;mso-text-raise:-8.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1059"
+   type="#_x0000_t75" style='width:57.75pt;height:24pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image084.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=77 height=32
+  src="m31_RRN_files/image085.png" v:shapes="_x0000_i1059"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1059"
+    DrawAspect="Content" ObjectID="_1648903153">
+   </o:OLEObject>
+  </xml><![endif]-->. When the angle of incident equals or becomes greater than
+  the critical angle<span style='position:relative;top:10.0pt;mso-text-raise:
+  -10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1060" type="#_x0000_t75"
+   style='width:132pt;height:27.75pt' o:ole="">
+   <v:imagedata src="m31_RRN_files/image086.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=176 height=37
+  src="m31_RRN_files/image087.png" v:shapes="_x0000_i1060"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1060"
+    DrawAspect="Content" ObjectID="_1648903154">
+   </o:OLEObject>
+  </xml><![endif]-->then the light is totally reflected at the interface. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=841 valign=top style='width:630.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  color:blue'><a href="http://www.physics.usyd.edu.au/teach_res/mp/mphome.htm"><span
+  style='color:blue'>Doing Physics with Matlab</span></a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+  color:blue'><a href="http://www.physics.usyd.edu.au/teach_res/mp/mscripts/"><span
+  style='color:blue'>Download mscripts</span></a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><span
+  style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:150%'>Animation
+  produced with<span style='mso-spacerun:yes'>���� </span><b style='mso-bidi-font-weight:
+  normal'><span style='color:#843C0C;mso-themecolor:accent2;mso-themeshade:
+  128;mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'>wm_refraction01.m<span style='mso-spacerun:yes'>���
+  </span>wm_refraction02.m<span style='mso-spacerun:yes'>� </span>p002.m<span
+  style='mso-spacerun:yes'>�� </span>p002A.m<o:p></o:p></span></b></span></p>
+  <p class=MsoNormal style='line-height:115%'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='line-height:115%'><a
+  href="spHome.htm"><span
+  style='font-size:16.0pt;line-height:115%;mso-bidi-font-family:Calibri;
+  mso-bidi-theme-font:minor-latin;color:blue'>VISUAL PHYSICS ONLINE</span></a><span
+  class=MsoHyperlink><span style='font-size:16.0pt;line-height:115%;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;color:blue'><o:p></o:p></span></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:16.0pt;
+  line-height:150%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>If
+  you have any feedback, comments, suggestions or corrections please email:</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:16.0pt;
+  line-height:150%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ian
+  Cooper<span style='mso-spacerun:yes'>�� </span>matlabvisualphysics@gmail.com<b
+  style='mso-bidi-font-weight:normal'><span style='color:#385623;mso-themecolor:
+  accent6;mso-themeshade:128'><o:p></o:p></span></b></span></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+  11.0pt;line-height:150%;color:#843C0C;mso-themecolor:accent2;mso-themeshade:
+  128;mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-right:.15pt;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:11.0pt;color:#7030A0'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-right:.15pt'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

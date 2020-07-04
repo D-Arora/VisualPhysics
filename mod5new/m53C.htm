@@ -1,0 +1,2145 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<base target="_blank">
+<link rel=File-List href="m53C_files/filelist.xml">
+<link rel=Edit-Time-Data href="m53C_files/editdata.mso">
+<link rel=OLE-Object-Data href="m53C_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Visual Physics Online</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>Mechanics</o:Subject>
+  <o:Author>Ian Cooper</o:Author>
+  <o:Keywords>mechanics, Newton's laws, gravitation, projectiles, circular motion, highway curves banked and unbanked</o:Keywords>
+  <o:Description>mod5new.pptx&#13;&#10;spCalculations.m</o:Description>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Owner</o:LastAuthor>
+  <o:Revision>21</o:Revision>
+  <o:TotalTime>1625</o:TotalTime>
+  <o:Created>2019-09-16T19:47:00Z</o:Created>
+  <o:LastSaved>2019-09-16T21:06:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>1165</o:Words>
+  <o:Characters>6641</o:Characters>
+  <o:Category>Mechanics</o:Category>
+  <o:Lines>55</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7791</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="m53C_files/themedata.thmx">
+<link rel=colorSchemeMapping href="m53C_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>135</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-AU</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="0" Name="Body Text 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Hyperlink"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:136;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 134742016 16 0 1048576 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:136;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 134742016 16 0 1048576 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"\@PMingLiU";
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:script;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:PMingLiU;
+	mso-bidi-font-family:"Times New Roman";}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:10.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text 2 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-ansi-font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	color:blue;
+	mso-text-animation:none;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+address
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Address Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	font-style:normal;
+	mso-bidi-font-style:italic;
+	text-decoration:underline;
+	text-underline:single;}
+cite
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Segoe UI","sans-serif";
+	mso-fareast-font-family:PMingLiU;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:PMingLiU;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+span.HTMLAddressChar
+	{mso-style-name:"HTML Address Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Address";
+	mso-bidi-font-style:italic;
+	text-decoration:underline;
+	text-underline:single;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Segoe UI","sans-serif";
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:PMingLiU;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:PMingLiU;
+	mso-bidi-font-family:"Times New Roman";
+	text-decoration:underline;
+	text-underline:single;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text 2";
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:16.0pt;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:PMingLiU;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:833834804;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1869054076 201916431 201916441 201916443 201916431 201916441 201916443 201916431 201916441 201916443;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-bidi-font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-AU link=blue vlink="#954F72" style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-left:1.0cm;tab-stops:3.0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0cm;tab-stops:3.0cm'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_3" o:spid="_x0000_s1026" type="#_x0000_t75"
+ style='position:absolute;left:0;text-align:left;margin-left:-25.55pt;
+ margin-top:-8.3pt;width:141.25pt;height:122.4pt;z-index:251659264;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:page;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+ mso-height-relative:page'>
+ <v:imagedata src="m53C_files/image001.png" o:title=""/>
+ <w:wrap type="through" anchory="page"/>
+</v:shape><![endif]--><![if !vml]><img width=188 height=163
+src="m53C_files/image002.png" align=left hspace=12 v:shapes="Picture_x0020_3"><![endif]><span
+style='mso-spacerun:yes'>�</span><span style='font-size:20.0pt;line-height:
+115%'><a href="spHome.htm"><b
+style='mso-bidi-font-weight:normal'><span style='mso-ansi-font-size:20.0pt;
+line-height:115%;font-family:"Bookman Old Style","serif"'>VISUAL PHYSICS ONLINE</span></b></a></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:20.0pt;line-height:
+115%;font-family:"Bookman Old Style","serif";color:blue'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0cm'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;line-height:115%;font-family:"Bookman Old Style","serif";
+color:#C45911;mso-themecolor:accent2;mso-themeshade:191'>MODULE 5<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0cm'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;line-height:115%;font-family:"Bookman Old Style","serif";
+color:#C45911;mso-themecolor:accent2;mso-themeshade:191'>ADVANCED MECHANICS<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt;line-height:115%;font-family:"Bookman Old Style","serif";
+color:#C45911;mso-themecolor:accent2;mso-themeshade:191'>KEPLER�S LAWS AND THE
+MOTION OF PLANETS<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0cm'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:1.0cm;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=841 valign=top style='width:630.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>How do the planets
+  <span class=GramE>move ?</span><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'><span
+  style='mso-spacerun:yes'>��������� </span>Kepler�s Laws of Motion<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>One of the most important questions
+  historically in Physics was how the planets move.<span
+  style='mso-spacerun:yes'>� </span>Many historians consider the field of
+  Physics to date from the work of Newton, and the motion of the planets was
+  the main problem Newton set out to solve.<span style='mso-spacerun:yes'>�
+  </span>In the process of doing this, he not only introduced his laws of
+  motion and discovered the law of <span class=GramE>gravity,</span> he also
+  developed differential and integral calculus.<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>Today, the same laws that govern the motion
+  of <span class=GramE>planets,</span> are used by scientists to put satellites
+  into orbit around the Earth and to send spacecraft through the solar system.<o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+  line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>How the planets move is determined by
+  gravitational forces.<span style='mso-spacerun:yes'>� </span>The forces of
+  gravity are the only forces applied to the planets.<span
+  style='mso-spacerun:yes'>� </span>The gravitational forces between the
+  planets are very small compared with the force due to the Sun since the mass
+  of the planets are much less than the Sun's mass. Each planet moves almost
+  the way the gravitational force of the Sun alone dictates, as though the
+  other planets did not exist.<o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+  line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>The motion of a planet is governed <b
+  style='mso-bidi-font-weight:normal'><span style='color:#C55A11;mso-themecolor:
+  accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>by Newton�s Law of Universal Gravitation</span><span
+  style='color:#7030A0'><o:p></o:p></span></b></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm 2.0cm'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><span
+  style='mso-tab-count:1'>������� </span>(1)<span style='mso-tab-count:1'>�� </span></span><span
+  style='position:relative;top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:89.25pt;height:39.75pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image003.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=119 height=53
+  src="m53C_files/image004.png" v:shapes="_x0000_i1025"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+    DrawAspect="Content" ObjectID="_1630210002">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+  minor-latin'><o:p></o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:36.0pt center 207.65pt right 415.3pt'><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span class=GramE><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>where</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'> </span><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Times New Roman","serif"'>G</span></i><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'> is the
+  Universal Gravitational Constant, </span><i><span style='font-family:"Times New Roman","serif"'>M</span></i><sub><span
+  style='font-family:"Times New Roman","serif"'>S</span></sub> <span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>is the mass
+  of the Sun, </span><i><span style='font-family:"Times New Roman","serif"'>m</span></i><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'> is the mass
+  of the planet and </span><i><span style='font-family:"Times New Roman","serif"'>r</span></i>
+  <span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>is the
+  distance from the Sun to the planet.<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:27.0pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><span
+  style='mso-tab-count:1'>������ </span></span><i><span style='font-family:
+  "Times New Roman","serif"'>G</span></i><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'> = 6.67</span><span style='font-family:
+  Symbol;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>�</span></span><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>10<sup>-11</sup> N.m<sup>2</sup>.kg<sup>2</sup><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-indent:27.0pt;line-height:150%'><i><span
+  style='font-family:"Times New Roman","serif"'>M</span></i><sub><span
+  style='font-family:"Times New Roman","serif"'>S</span></sub><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'> = 2.0</span><span
+  style='font-family:Symbol;mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>�</span></span><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>10<sup>30</sup> kg<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>Historically,
+  the laws of planetary motion were discovered by the outstanding German
+  astronomer <b style='mso-bidi-font-weight:normal'><span style='color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>Johannes <span
+  class=SpellE>Kepler</span></span></b><span style='color:#C55A11;mso-themecolor:
+  accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'> </span>(1571-1630) based on almost 20 years of processing
+  astronomical data, before Newton and without the aid of the law of
+  gravitation.<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
+  mso-bidi-font-size:16.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:PMingLiU;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman";color:#7030A0;mso-ansi-language:
+  EN-AU;mso-fareast-language:EN-AU;mso-bidi-language:AR-SA'><br clear=all
+  style='mso-special-character:line-break;page-break-before:always'>
+  </span></b>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:115%;
+  mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+  Calibri;mso-hansi-theme-font:minor-latin;color:#7030A0'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>Kepler's<span
+  style='mso-spacerun:yes'>� </span>Laws of<span style='mso-spacerun:yes'>�
+  </span>Planetary Motion<o:p></o:p></span></b></p>
+  <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;line-height:
+  150%;mso-list:l0 level1 lfo1'><![if !supportLists]><span style='font-size:
+  16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:16.0pt;mso-bidi-font-size:
+  12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>The
+  path of each planet around the Sun is an <b style='mso-bidi-font-weight:normal'><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>ellipse</span></b>
+  with the Sun at one focus.<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+  150%;mso-list:l0 level1 lfo1'><![if !supportLists]><span style='font-size:
+  16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:16.0pt;mso-bidi-font-size:
+  12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Each
+  planet moves so that all imaginary lines drawn from the Sun to the planet
+  sweeps out <b style='mso-bidi-font-weight:normal'><span style='color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>equal areas</span></b><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'> </span>in <span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>equal periods of
+  time</span>.<o:p></o:p></span></p>
+  <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;line-height:
+  150%;mso-list:l0 level1 lfo1'><![if !supportLists]><span style='font-size:
+  16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+  style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:16.0pt;mso-bidi-font-size:
+  12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>The
+  ratio of the squares of the periods </span><i style='mso-bidi-font-style:
+  normal'><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:
+  150%'>T</span></i><sup><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%'>2</span></sup><span style='font-size:16.0pt;mso-bidi-font-size:
+  12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>
+  of revolution of the planets is equal to the ratio of the cubes of their
+  orbital radii </span><i style='mso-bidi-font-style:normal'><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%'>r</span></i><sup><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>3</span></sup><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'> (mean
+  distance from the Sun or length of <b style='mso-bidi-font-weight:normal'><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>semi-major axis</span></b>,
+  </span><i><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:
+  150%'>a</span></i><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+  line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='text-indent:1.0cm;line-height:150%;tab-stops:1.0cm 70.9pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>(6) <span
+  style='mso-tab-count:1'>����� </span></span><span style='position:relative;
+  top:21.0pt;mso-text-raise:-21.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+   type="#_x0000_t75" style='width:258.75pt;height:53.25pt' o:ole="">
+   <v:imagedata src="m53C_files/image005.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=345 height=71
+  src="m53C_files/image006.png" v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+    DrawAspect="Content" ObjectID="_1630210003">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+  minor-latin'><span style='mso-spacerun:yes'>�</span><span
+  style='mso-spacerun:yes'>�����������������</span></span><!--[if gte vml 1]><v:shape
+   id="_x0000_i1046" type="#_x0000_t75" style='width:42pt;height:12.75pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image007.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=56 height=17
+  src="m53C_files/image008.png" v:shapes="_x0000_i1046"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1046"
+    DrawAspect="Content" ObjectID="_1630210004">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>�</span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <span style='font-size:16.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:PMingLiU;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman";color:#0000CC;mso-ansi-language:
+  EN-AU;mso-fareast-language:EN-AU;mso-bidi-language:AR-SA'><br clear=all
+  style='mso-special-character:line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal><b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  color:#0000CC'><o:p>&nbsp;</o:p></span></b></p>
+  <h2 style='line-height:150%;mso-outline-level:2'><span class=SpellE><span
+  lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>Kepler�s</span></span><span
+  lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'> First Law<o:p></o:p></span></h2>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>A planet describes
+  an ellipse with the Sun at one focus</span></b><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;color:#0000CC'>.</span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'> <o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>But what kind of an ellipse do planets
+  describe? It turns out they are very close to circles. The path of the planet
+  nearest the Sun, Mercury, differs most from a circle, but even in this case,
+  the longest diameter is only 2% greater than the shortest one. Bodies other
+  than the planets, for example, comets move around the Sun in greatly
+  flattened ellipses. <o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>Since the Sun is located at one of the foci
+  and not the centre, the distance from the planet to the Sun changes as the
+  planet moves in its orbit<span class=GramE>..</span> The point nearest the
+  Sun is called the <b style='mso-bidi-font-weight:normal'><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>perihelion</span></b>
+  and the farthest point from the Sun is the <b style='mso-bidi-font-weight:
+  normal'><span style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:
+  191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>aphelion</span></b>. Half the distance from the perihelion to the
+  aphelion is known as the <b style='mso-bidi-font-weight:normal'><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>semi-major radius</span></b>
+  </span><i><span style='font-family:"Times New Roman","serif"'>a</span></i><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>. The other
+  radius of the ellipse is the <b style='mso-bidi-font-weight:normal'><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>semi-minor radius</span></b>
+  </span><i><span style='font-family:"Times New Roman","serif"'>b</span></i><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>. <o:p></o:p></span></p>
+  <span style='font-size:16.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:PMingLiU;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-AU;
+  mso-fareast-language:EN-AU;mso-bidi-language:AR-SA'><br clear=all
+  style='mso-special-character:line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>The equation of an ellipse is<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><span style='mso-tab-count:1'>��������� </span><span
+  style='mso-tab-count:1'>��������� </span>(7)<span style='mso-tab-count:2'>�������������� </span></span><span
+  style='position:relative;top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:104.25pt;height:42pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image009.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=139 height=56
+  src="m53C_files/image010.png" v:shapes="_x0000_i1027"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+    DrawAspect="Content" ObjectID="_1630210005">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>��������������
+  </span><b style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;color:#C55A11;mso-themecolor:accent2;
+  mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>ellipse</span></b><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:20.0pt;mso-bidi-font-size:16.0pt;line-height:150%;
+  mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+  Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;mso-themecolor:accent2;
+  mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000;position:relative;top:10.0pt;mso-text-raise:-10.0pt'><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-no-proof:
+  yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1" o:spid="_x0000_i1068"
+   type="#_x0000_t75" style='width:390pt;height:309pt;visibility:visible;
+   mso-wrap-style:square'>
+   <v:imagedata src="m53C_files/image011.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=520 height=412
+  src="m53C_files/image012.png" v:shapes="Picture_x0020_1"><![endif]></span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+  text-indent:1.0cm;line-height:150%;tab-stops:1.0cm'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>Fig. 1.<span style='mso-spacerun:yes'>��
+  </span>The path of a planet around the Sun is an <b style='mso-bidi-font-weight:
+  normal'><span style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:
+  191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>ellipse</span></b><span style='color:#7030A0'>.</span><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <span style='font-size:16.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:PMingLiU;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman";color:#0000CC;mso-ansi-language:
+  EN-AU;mso-fareast-language:EN-AU;mso-bidi-language:AR-SA'><br clear=all
+  style='mso-special-character:line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal style='line-height:150%'><b><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:major-fareast;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;color:#0000CC'><o:p>&nbsp;</o:p></span></b></p>
+  <h2 style='line-height:150%;mso-outline-level:2'><span class=SpellE><span
+  lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>Kepler's</span></span><span
+  lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'> Second Law<o:p></o:p></span></h2>
+  <p class=MsoBodyText2 style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-US style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>Each planet moves
+  so that an imaginary line drawn from the Sun to the planet sweeps out equal
+  areas in equal periods of time. <o:p></o:p></span></b></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>In a small
+  time interval <span style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" style='width:16.5pt;height:16.5pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image013.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=22 height=22
+  src="m53C_files/image014.png" v:shapes="_x0000_i1028"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1028"
+    DrawAspect="Content" ObjectID="_1630210006">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>the line draw
+  from the Sun to the planet P turns through an <span class=GramE>angle </span></span><span
+  lang=EN-US style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1029" type="#_x0000_t75" style='width:22.5pt;height:16.5pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image015.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=30 height=22
+  src="m53C_files/image016.png" v:shapes="_x0000_i1029"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1029"
+    DrawAspect="Content" ObjectID="_1630210007">
+   </o:OLEObject>
+  </xml><![endif]--></span><span lang=EN-US>. <o:p></o:p></span></p>
+  <p class=MsoBodyText2 align=center style='text-align:center;line-height:150%'><span
+  style='mso-ansi-language:EN-AU;mso-fareast-language:EN-AU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_8" o:spid="_x0000_i1067" type="#_x0000_t75" style='width:408.75pt;
+   height:399.75pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m53C_files/image017.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=545 height=533
+  src="m53C_files/image018.png" v:shapes="Picture_x0020_8"><![endif]></span><span
+  lang=EN-US><o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US>Therefore,
+  the area of the sector swept out can be approximated as the area of a
+  triangle given by <o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><span
+  style='mso-spacerun:yes'>�������� </span><span style='position:relative;
+  top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+   type="#_x0000_t75" style='width:87pt;height:40.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image019.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=116 height=54
+  src="m53C_files/image020.png" v:shapes="_x0000_i1030"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+    DrawAspect="Content" ObjectID="_1630210008">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US>The area <span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1031" type="#_x0000_t75" style='width:45pt;height:16.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image021.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=60 height=22
+  src="m53C_files/image022.png" v:shapes="_x0000_i1031"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+    DrawAspect="Content" ObjectID="_1630210009">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>has the same
+  value at all points along the orbit. <o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US>When the
+  planet is close to the Sun, </span><i style='mso-bidi-font-style:normal'><span
+  lang=EN-US style='font-family:"Times New Roman","serif"'>r </span></i><span
+  lang=EN-US>is small and<span style='mso-spacerun:yes'>� </span><span
+  style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1032" type="#_x0000_t75" style='width:45pt;height:16.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image021.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=60 height=22
+  src="m53C_files/image022.png" v:shapes="_x0000_i1032"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+    DrawAspect="Content" ObjectID="_1630210010">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>is large:
+  when the planet is far from the sun, </span><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='font-family:"Times New Roman","serif"'>r</span></i><span
+  lang=EN-US> is large and <span style='position:relative;top:3.0pt;mso-text-raise:
+  -3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+   style='width:45pt;height:16.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image021.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=60 height=22
+  src="m53C_files/image022.png" v:shapes="_x0000_i1033"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+    DrawAspect="Content" ObjectID="_1630210011">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>is small.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-no-proof:
+  yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_9" o:spid="_x0000_i1066"
+   type="#_x0000_t75" style='width:390pt;height:261pt;visibility:visible;
+   mso-wrap-style:square'>
+   <v:imagedata src="m53C_files/image023.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=520 height=348
+  src="m53C_files/image024.png" v:shapes="Picture_x0020_9"><![endif]></span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.3pt;margin-bottom:
+  10.0pt;margin-left:21.3pt'><span style='mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+  minor-latin'>Fig. 2.<span style='mso-spacerun:yes'>��� </span>A planet moves
+  so that an imaginary line drawn from the Sun to the planet sweeps out equal
+  areas in equal periods of time. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:28.3pt;margin-bottom:
+  10.0pt;margin-left:21.3pt'><span style='mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+  minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span class=SpellE><span
+  lang=EN-US>Kepler�s</span></span><span lang=EN-US> Second law follows from
+  Newton�s laws. The component of the orbital velocity <span style='position:
+  relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1034"
+   type="#_x0000_t75" style='width:12pt;height:16.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image025.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=22
+  src="m53C_files/image026.png" v:shapes="_x0000_i1034"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+    DrawAspect="Content" ObjectID="_1630210012">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>perpendicular
+  to the radius vector <span style='position:relative;top:2.0pt;mso-text-raise:
+  -2.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+   style='width:12pt;height:16.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image027.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=16 height=22
+  src="m53C_files/image028.png" v:shapes="_x0000_i1035"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1035"
+    DrawAspect="Content" ObjectID="_1630210013">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span><span
+  class=GramE>is </span><span style='position:relative;top:7.0pt;mso-text-raise:
+  -7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+   style='width:73.5pt;height:22.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image029.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=98 height=30
+  src="m53C_files/image030.png" v:shapes="_x0000_i1036"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1036"
+    DrawAspect="Content" ObjectID="_1630210014">
+   </o:OLEObject>
+  </xml><![endif]--></span>. The displacement along the direction of <span
+  style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1037" type="#_x0000_t75" style='width:18pt;height:22.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image031.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=24 height=30
+  src="m53C_files/image032.png" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1037"
+    DrawAspect="Content" ObjectID="_1630210015">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>during the
+  time interval <span style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1038" type="#_x0000_t75" style='width:16.5pt;height:16.5pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image033.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=22 height=22
+  src="m53C_files/image014.png" v:shapes="_x0000_i1038"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+    DrawAspect="Content" ObjectID="_1630210016">
+   </o:OLEObject>
+  </xml><![endif]--></span><span style='mso-spacerun:yes'>�</span>is the arc
+  length <span style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1039" type="#_x0000_t75" style='width:31.5pt;height:19.5pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image034.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=42 height=26
+  src="m53C_files/image035.png" v:shapes="_x0000_i1039"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+    DrawAspect="Content" ObjectID="_1630210017">
+   </o:OLEObject>
+  </xml><![endif]--></span>, so<o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><span
+  style='mso-spacerun:yes'>������� </span><span style='position:relative;
+  top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1040"
+   type="#_x0000_t75" style='width:64.5pt;height:40.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image036.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=86 height=54
+  src="m53C_files/image037.png" v:shapes="_x0000_i1040"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+    DrawAspect="Content" ObjectID="_1630210018">
+   </o:OLEObject>
+  </xml><![endif]--></span><o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><span
+  style='mso-spacerun:yes'>�</span></span><span lang=EN-US style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>Combining<o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><span
+  style='mso-spacerun:yes'>���� </span></span><span lang=EN-US
+  style='position:relative;top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1041" type="#_x0000_t75" style='width:249pt;height:40.5pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image038.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=332 height=54
+  src="m53C_files/image039.png" v:shapes="_x0000_i1041"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+    DrawAspect="Content" ObjectID="_1630210020">
+   </o:OLEObject>
+  </xml><![endif]--></span><span lang=EN-US><o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US>gives <o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><span
+  style='mso-spacerun:yes'>����� </span><span style='position:relative;
+  top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1042"
+   type="#_x0000_t75" style='width:214.5pt;height:40.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image040.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=286 height=54
+  src="m53C_files/image041.png" v:shapes="_x0000_i1042"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+    DrawAspect="Content" ObjectID="_1630210021">
+   </o:OLEObject>
+  </xml><![endif]--></span><o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US>The magnitude
+  of the angular momentum is<o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><span
+  style='mso-spacerun:yes'>������ </span><span style='position:relative;
+  top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1043"
+   type="#_x0000_t75" style='width:148.5pt;height:22.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image042.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=198 height=30
+  src="m53C_files/image043.png" v:shapes="_x0000_i1043"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+    DrawAspect="Content" ObjectID="_1630210022">
+   </o:OLEObject>
+  </xml><![endif]--></span><o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US>Hence,<o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US><span
+  style='mso-spacerun:yes'>����� </span><span style='position:relative;
+  top:19.0pt;mso-text-raise:-19.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1044"
+   type="#_x0000_t75" style='width:63pt;height:43.5pt' o:ole="">
+   <v:imagedata src="m53C_files/image044.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=84 height=58
+  src="m53C_files/image045.png" v:shapes="_x0000_i1044"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+    DrawAspect="Content" ObjectID="_1630210023">
+   </o:OLEObject>
+  </xml><![endif]--></span><o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>No external
+  torques act on the system, hence, the angular momentum </span><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman","serif";
+  color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>L </span></i><span
+  lang=EN-US style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>must be a constant
+  </span><span lang=EN-US style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>(<b
+  style='mso-bidi-font-weight:normal'><span style='color:#C55A11;mso-themecolor:
+  accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'>law of conservation of angular momentum</span></b>) and this
+  means that the area swept out per unit time is also a constant, which is
+  simply <span class=SpellE>Kepler�s</span> 2<sup>nd</sup> law. <o:p></o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoBodyText2 style='line-height:150%'><span lang=EN-US
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>&quot;Equal
+  areas in equal times&quot; means the rate at which area is swept out on the
+  orbit </span><span lang=EN-US style='position:relative;top:8.0pt;mso-text-raise:
+  -8.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1045" type="#_x0000_t75"
+   style='width:61.5pt;height:24pt' o:ole="">
+   <v:imagedata src="m53C_files/image046.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=82 height=32
+  src="m53C_files/image047.png" v:shapes="_x0000_i1045"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1045"
+    DrawAspect="Content" ObjectID="_1630210024">
+   </o:OLEObject>
+  </xml><![endif]--></span><span lang=EN-US style='mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+  minor-latin'><span style='mso-spacerun:yes'>�</span>is constant.<o:p></o:p></span></p>
+  <span style='font-size:16.0pt;line-height:115%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:PMingLiU;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-AU;
+  mso-fareast-language:EN-AU;mso-bidi-language:AR-SA'><br clear=all
+  style='mso-special-character:line-break;page-break-before:always'>
+  </span>
+  <p class=MsoNormal style='margin-right:28.3pt'><b><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:major-fareast;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></b></p>
+  <h2 style='line-height:150%;mso-outline-level:2'><span class=SpellE><span
+  lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>Kepler's</span></span><span
+  lang=EN-US style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:
+  150%;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;color:#C55A11;
+  mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'> Third Law<o:p></o:p></span></h2>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin'>For a planet orbiting the Sun with a radius
+  </span><i style='mso-bidi-font-style:normal'><span style='font-family:"Times New Roman","serif"'>r</span></i><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>, the
+  centripetal force results from the gravitational attraction between the planet
+  and the Sun<o:p></o:p></span></p>
+  <p class=MsoNormal style='text-indent:36.0pt;line-height:150%'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>Centripetal
+  force = Gravitational force<o:p></o:p></span></p>
+  <p class=MsoNormal style='text-indent:36.0pt;line-height:150%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1051" type="#_x0000_t75" style='width:233.25pt;height:42pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image048.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=311 height=56
+  src="m53C_files/image049.png" v:shapes="_x0000_i1051"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1051"
+    DrawAspect="Content" ObjectID="_1630210025">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='text-indent:36.0pt;line-height:150%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1052" type="#_x0000_t75" style='width:1in;height:39.75pt' o:ole="">
+   <v:imagedata src="m53C_files/image050.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=96 height=53
+  src="m53C_files/image051.png" v:shapes="_x0000_i1052"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1052"
+    DrawAspect="Content" ObjectID="_1630210026">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%;tab-stops:1.0cm'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'>For
+  rotational motion, we know that<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:29.65pt;line-height:150%;tab-stops:
+  1.0cm'><!--[if gte vml 1]><v:shape id="_x0000_i1053" type="#_x0000_t75"
+   style='width:159.75pt;height:39.75pt' o:ole="">
+   <v:imagedata src="m53C_files/image052.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=213 height=53
+  src="m53C_files/image053.png" v:shapes="_x0000_i1053"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1053"
+    DrawAspect="Content" ObjectID="_1630210027">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-left:29.65pt;line-height:150%;tab-stops:
+  1.0cm'><!--[if gte vml 1]><v:shape id="_x0000_i1054" type="#_x0000_t75"
+   style='width:78.75pt;height:42pt' o:ole="">
+   <v:imagedata src="m53C_files/image054.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=105 height=56
+  src="m53C_files/image055.png" v:shapes="_x0000_i1054"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1054"
+    DrawAspect="Content" ObjectID="_1630210028">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:1.0cm 90.0pt center 207.65pt right 415.3pt'><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><span
+  style='mso-tab-count:1'>��������� </span></span><span style='font-size:16.0pt;
+  mso-bidi-font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+  minor-latin'><o:p></o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:1.0cm 90.0pt center 207.65pt right 415.3pt'><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>So Kepler�s
+  3<sup>rd</sup> law can be expressed as<o:p></o:p></span></p>
+  <p class=MsoFooter style='line-height:115%;tab-stops:1.0cm 90.0pt center 207.65pt right 415.3pt'><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:115%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+   type="#_x0000_t75" style='width:102.75pt;height:42pt' o:ole="">
+   <v:imagedata src="m53C_files/image056.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=137 height=56
+  src="m53C_files/image057.png" v:shapes="_x0000_i1047"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1047"
+    DrawAspect="Content" ObjectID="_1630210029">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><!--[if gte vml 1]><v:shape id="_x0000_i1048"
+   type="#_x0000_t75" style='width:186.75pt;height:50.25pt' o:ole="">
+   <v:imagedata src="m53C_files/image058.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=249 height=67
+  src="m53C_files/image059.png" v:shapes="_x0000_i1048"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1048"
+    DrawAspect="Content" ObjectID="_1630210030">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><!--[if gte vml 1]><v:shape id="_x0000_i1049"
+   type="#_x0000_t75" style='width:93pt;height:51.75pt' o:ole="">
+   <v:imagedata src="m53C_files/image060.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=124 height=69
+  src="m53C_files/image061.png" v:shapes="_x0000_i1049"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1049"
+    DrawAspect="Content" ObjectID="_1630210031">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoFooter style='margin-left:29.65pt;line-height:115%;tab-stops:
+  1.0cm 90.0pt center 207.65pt right 415.3pt'><!--[if gte vml 1]><v:shape id="_x0000_i1050"
+   type="#_x0000_t75" style='width:93pt;height:42pt' o:ole="">
+   <v:imagedata src="m53C_files/image062.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=124 height=56
+  src="m53C_files/image063.png" v:shapes="_x0000_i1050"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1050"
+    DrawAspect="Content" ObjectID="_1630210032">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:1.0cm 90.0pt center 207.65pt right 415.3pt'><span
+  style='mso-spacerun:yes'>����� </span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:90.0pt center 207.65pt right 415.3pt'><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:90.0pt center 207.65pt right 415.3pt'><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'>Figure
+  3 shows a computer simulation for the motion of a planet around the Sun. The
+  dots represent the positions of the planet at equal time intervals. Near the aphelion,
+  the dots are closely spaced indicating a small speed while at the perihelion
+  the dots are widely spaced indicating a large speed for the planet.<o:p></o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:90.0pt center 207.65pt right 415.3pt'><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoFooter align=center style='text-align:center;line-height:150%;
+  tab-stops:90.0pt center 207.65pt right 415.3pt'><span style='font-family:
+  "Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman";mso-fareast-language:EN-AU;
+  mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_10" o:spid="_x0000_i1065"
+   type="#_x0000_t75" style='width:318pt;height:307.5pt;visibility:visible;
+   mso-wrap-style:square'>
+   <v:imagedata src="m53C_files/image064.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=424 height=410
+  src="m53C_files/image065.png" v:shapes="Picture_x0020_10"><![endif]></span><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  <p class=MsoFooter align=center style='text-align:center;line-height:150%;
+  tab-stops:90.0pt center 207.65pt right 415.3pt'><span style='font-family:
+  "Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoFooter style='margin-top:0cm;margin-right:28.3pt;margin-bottom:
+  0cm;margin-left:21.3pt;margin-bottom:.0001pt;line-height:115%;tab-stops:1.0cm 90.0pt center 207.65pt right 415.3pt'><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:115%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'>Fig.
+  3.<span style='mso-spacerun:yes'>�� </span>Computer simulation of the motion
+  of a planet around the Sun.<o:p></o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:90.0pt center 207.65pt right 415.3pt'><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:90.0pt center 207.65pt right 415.3pt'><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoFooter style='line-height:150%;tab-stops:90.0pt center 207.65pt right 415.3pt'><span
+  style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+  color:blue'><span style='mso-spacerun:yes'>�</span></span><a
+  href="http://www.physics.usyd.edu.au/teach_res/hsp/u5/ag_kepler1.htm"><span
+  style='font-size:16.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin'>Predict Observe Exercise � Motion of planets
+  around a star</span></a><span style='font-family:"Calibri","sans-serif";
+  mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  "Times New Roman";color:blue'> <o:p></o:p></span></p>
+  <p class=MsoFooter align=center style='text-align:center;line-height:150%;
+  tab-stops:90.0pt center 207.65pt right 415.3pt'><span style='font-family:
+  "Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:1.0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:1.0cm'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #833C0B 1.5pt;mso-border-themecolor:accent2;mso-border-themeshade:128;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ none;mso-border-insidev:none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=841 valign=top style='width:630.8pt;border:solid #833C0B 1.5pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;color:#833C0B;mso-themecolor:accent2;
+  mso-themeshade:128'>Exercise 1<o:p></o:p></span></b></p>
+  <p class=MsoNoSpacing style='line-height:150%'>Where is Mars?</p>
+  <p class=MsoNoSpacing style='line-height:150%'>One year on Mars (time for one
+  complete orbit around the Sun) is 687 Earth days. Determine the distance of
+  Mars from the Sun<b style='mso-bidi-font-weight:normal'>.<o:p></o:p></b></p>
+  <p class=MsoNoSpacing style='line-height:150%'><i style='mso-bidi-font-style:
+  normal'><span style='font-family:"Times New Roman","serif"'>R<sub>SE</sub></span></i>
+  = 1.50x10<sup>11</sup> m</p>
+  <p class=MsoNoSpacing style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><o:p>&nbsp;</o:p></b></p>
+  <p class=MsoNoSpacing style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='color:#843C0C;mso-themecolor:accent2;mso-themeshade:
+  128;mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'>Solution<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>We can use Kepler�s 3<sup>rd</sup> Law<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'><span style='mso-spacerun:yes'>������������ </span></span><!--[if gte vml 1]><v:shape
+   id="_x0000_i1055" type="#_x0000_t75" style='width:93pt;height:51.75pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image060.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=124 height=69
+  src="m53C_files/image061.png" v:shapes="_x0000_i1055"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1055"
+    DrawAspect="Content" ObjectID="_1630210033">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNoSpacing style='margin-left:36.0pt;text-indent:-36.0pt;
+  line-height:150%'>Earth (1)<span style='mso-spacerun:yes'>���� </span><i
+  style='mso-bidi-font-style:normal'><span style='font-family:"Times New Roman","serif"'>T</span></i><sub><span
+  style='font-family:"Times New Roman","serif"'>1</span></sub><span
+  style='font-family:"Times New Roman","serif"'> = <i style='mso-bidi-font-style:
+  normal'>T<sub>E</sub></i> = 365 days<span style='mso-spacerun:yes'>������
+  </span><i style='mso-bidi-font-style:normal'>r</i><sub>1 </sub>= <i
+  style='mso-bidi-font-style:normal'>R<sub>SE</sub></i> <span
+  style='mso-spacerun:yes'>�</span>= 1.50x10<sup>11</sup> m<o:p></o:p></span></p>
+  <p class=MsoNoSpacing style='margin-left:36.0pt;text-indent:-36.0pt;
+  line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Mars (2)<span
+  style='mso-spacerun:yes'>����� </span></span><i style='mso-bidi-font-style:
+  normal'><span style='font-family:"Times New Roman","serif"'>T</span></i><sub><span
+  style='font-family:"Times New Roman","serif"'>2</span></sub><span
+  style='font-family:"Times New Roman","serif"'> = <i style='mso-bidi-font-style:
+  normal'>T<sub>M</sub></i> = 687 days<span style='mso-spacerun:yes'>������
+  </span><i style='mso-bidi-font-style:normal'>r</i><sub>2 </sub>= <span
+  class=GramE><i style='mso-bidi-font-style:normal'>R<sub>SM</sub></i> <span
+  style='mso-spacerun:yes'>�</span>=</span> ? <span
+  style='mso-spacerun:yes'>�</span>m<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin;color:blue'><span style='mso-spacerun:yes'>������������� </span></span><!--[if gte vml 1]><v:shape
+   id="_x0000_i1056" type="#_x0000_t75" style='width:144.75pt;height:27.75pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image066.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=193 height=37
+  src="m53C_files/image067.png" v:shapes="_x0000_i1056"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1056"
+    DrawAspect="Content" ObjectID="_1630210034">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin;color:blue'><span style='mso-spacerun:yes'>������������� </span></span><!--[if gte vml 1]><v:shape
+   id="_x0000_i1057" type="#_x0000_t75" style='width:195pt;height:24.75pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image068.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=260 height=33
+  src="m53C_files/image069.png" v:shapes="_x0000_i1057"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1057"
+    DrawAspect="Content" ObjectID="_1630210035">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:blue'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin;color:blue'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+normal'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin;color:blue'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #833C0B 1.5pt;mso-border-themecolor:accent2;mso-border-themeshade:128;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ 1.5pt solid #833C0B;mso-border-insideh-themecolor:accent2;mso-border-insideh-themeshade:
+ 128;mso-border-insidev:1.5pt solid #833C0B;mso-border-insidev-themecolor:accent2;
+ mso-border-insidev-themeshade:128'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=841 valign=top style='width:630.8pt;border:solid #833C0B 1.5pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;color:#843C0C;mso-themecolor:accent2;
+  mso-themeshade:128;mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'>Exercise 2<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>How can we determine the mass of the Sun if we know the distance
+  between the Sun and the Earth?<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;color:#843C0C;mso-themecolor:accent2;
+  mso-themeshade:128;mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'>Solution<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>We can use Kepler�s 3<sup>rd</sup> Law<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span
+  style='mso-spacerun:yes'>��������� </span><!--[if gte vml 1]><v:shape id="_x0000_i1058"
+   type="#_x0000_t75" style='width:125.25pt;height:50.25pt' o:ole="">
+   <v:imagedata src="m53C_files/image070.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=167 height=67
+  src="m53C_files/image071.png" v:shapes="_x0000_i1058"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1058"
+    DrawAspect="Content" ObjectID="_1630210036">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='line-height:150%'><i style='mso-bidi-font-style:
+  normal'><span style='font-family:"Times New Roman","serif"'>G</span></i><span
+  style='font-family:"Times New Roman","serif"'> = 6.67x10<sup>-11</sup> N.m<sup>2</sup>.kg<sup>-2</sup>
+  <o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><i style='mso-bidi-font-style:
+  normal'><span style='font-family:"Times New Roman","serif"'>T </span></i><span
+  style='font-family:"Times New Roman","serif"'>= <i style='mso-bidi-font-style:
+  normal'>T<sub>E</sub></i> = 1 y = (1)(365)(24)(3600) s = 3.17</span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>x</span><span style='font-family:
+  "Times New Roman","serif"'>10<sup>7</sup> s<o:p></o:p></span></p>
+  <p class=MsoNoSpacing style='line-height:150%'><i style='mso-bidi-font-style:
+  normal'><span style='font-family:"Times New Roman","serif"'>r</span></i><span
+  style='font-family:"Times New Roman","serif"'> = <i style='mso-bidi-font-style:
+  normal'>R<sub>SE</sub></i> = 1.50x10<sup>11</sup> m<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><!--[if gte vml 1]><v:shape id="_x0000_i1059"
+   type="#_x0000_t75" style='width:242.25pt;height:30pt' o:ole="">
+   <v:imagedata src="m53C_files/image072.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=323 height=40
+  src="m53C_files/image073.png" v:shapes="_x0000_i1059"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1059"
+    DrawAspect="Content" ObjectID="_1630210037">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:27.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #833C0B 1.5pt;mso-border-themecolor:accent2;mso-border-themeshade:128;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ 1.5pt solid #833C0B;mso-border-insideh-themecolor:accent2;mso-border-insideh-themeshade:
+ 128;mso-border-insidev:1.5pt solid #833C0B;mso-border-insidev-themecolor:accent2;
+ mso-border-insidev-themeshade:128'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=841 valign=top style='width:630.8pt;border:solid #833C0B 1.5pt;
+  mso-border-themecolor:accent2;mso-border-themeshade:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='color:#843C0C;mso-themecolor:accent2;mso-themeshade:128;mso-style-textfill-fill-color:
+  #843C0C;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=50000'>Exercise 3<span
+  style='mso-spacerun:yes'>� </span><span style='mso-spacerun:yes'>���</span></span></b><b
+  style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
+  color:#833C0B;mso-themecolor:accent2;mso-themeshade:128'>Gravitational Force
+  on the Moon<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>The Moon, the Sun and the Earth are aligned so that both the Sun
+  and the Earth are at right angles to each other. Find the net force acting on
+  the Moon.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-left:29.7pt;line-height:150%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1060" type="#_x0000_t75" style='width:171pt;height:23.25pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image074.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=228 height=31
+  src="m53C_files/image075.png" v:shapes="_x0000_i1060"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1060"
+    DrawAspect="Content" ObjectID="_1630210038">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-left:29.7pt;line-height:150%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1061" type="#_x0000_t75" style='width:264pt;height:24pt' o:ole="">
+   <v:imagedata src="m53C_files/image076.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=352 height=32
+  src="m53C_files/image077.png" v:shapes="_x0000_i1061"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1061"
+    DrawAspect="Content" ObjectID="_1630210039">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-left:29.7pt;line-height:150%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1062" type="#_x0000_t75" style='width:132.75pt;height:24pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image078.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=177 height=32
+  src="m53C_files/image079.png" v:shapes="_x0000_i1062"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1062"
+    DrawAspect="Content" ObjectID="_1630210040">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-left:29.7pt;line-height:150%'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1063" type="#_x0000_t75" style='width:266.25pt;height:24pt'
+   o:ole="">
+   <v:imagedata src="m53C_files/image080.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=355 height=32
+  src="m53C_files/image081.png" v:shapes="_x0000_i1063"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Unknown" ShapeID="_x0000_i1063"
+    DrawAspect="Content" ObjectID="_1630210041">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'><span style='mso-spacerun:yes'>����� </span><o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><b style='mso-bidi-font-weight:
+  normal'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;color:#833C0B;mso-themecolor:accent2;
+  mso-themeshade:128'>Solution<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-family:"Bradley Hand ITC";
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#833C0B;
+  mso-themecolor:accent2;mso-themeshade:128'>THINK</span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;color:#833C0B;mso-themecolor:accent2;
+  mso-themeshade:128'>: how to approach the problem (ISEE) / type of problem /
+  visualize the physical situation / annotated scientific diagram / what do I
+  know!<o:p></o:p></span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='mso-ascii-font-family:
+  Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>Need to calculate the forces between the Moon and Earth and
+  between Moon and Sun and then add the two forces as vectors.<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_3" o:spid="_x0000_i1064" type="#_x0000_t75" style='width:370.5pt;
+   height:474pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="m53C_files/image082.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=494 height=632
+  src="m53C_files/image083.png" v:shapes="Picture_x0020_3"><![endif]></span><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:20.9pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=813 valign=top style='width:609.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><a href="spHome.htm"><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>VISUAL PHYSICS ONLINE</span></a><span
+  class=MsoHyperlink><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><a href="spHome.htm">spHome.htm</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Ian Cooper<span
+  style='mso-spacerun:yes'>�� </span>School of Physics<span
+  style='mso-spacerun:yes'>�� </span>University of Sydney<b style='mso-bidi-font-weight:
+  normal'><span style='color:blue'><o:p></o:p></span></b></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>If you have any feedback, comments,
+  suggestions or corrections please email Ian Cooper<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>ian.cooper@sydney.edu.au<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
