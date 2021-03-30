@@ -1,0 +1,866 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<base target="_blank">
+<link rel=File-List href="cg001_files/filelist.xml">
+<link rel=Edit-Time-Data href="cg001_files/editdata.mso">
+<link rel=OLE-Object-Data href="cg001_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Matlab Visual Physics</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>mechanics</o:Subject>
+  <o:Author>Ian Cooper</o:Author>
+  <o:Keywords>dynamics, newton's laws, computer animations, mechanics</o:Keywords>
+  <o:Description>D:/aPhysics/fdtd&#13;&#10;cg.pptx&#13;&#10;cg_001.m</o:Description>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Owner</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3783</o:TotalTime>
+  <o:Created>2021-03-30T22:42:00Z</o:Created>
+  <o:LastSaved>2021-03-30T22:42:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>580</o:Words>
+  <o:Characters>3311</o:Characters>
+  <o:Category>mechanics, computer animations</o:Category>
+  <o:Lines>27</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3884</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:MTWinEqns dt:dt="boolean">1</o:MTWinEqns>
+ </o:CustomDocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="cg001_files/themedata.thmx">
+<link rel=colorSchemeMapping href="cg001_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>FullPage</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-AU</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:16.0pt;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Calibri;
+	mso-bidi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-AU link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:33.35pt;border-collapse:collapse;border:none;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:
+ none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=784 valign=top style='width:587.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:blue'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:blue'><a
+  href="https://d-arora.github.io/VisualPhysics/"><span style='color:blue'>VISUAL
+  PHYSICS ONLINE</span></a><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:blue'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:blue'><a
+  href="https://d-arora.github.io/Doing-Physics-With-Matlab/"><span
+  style='color:blue'>DOING PHYSICS WITH MATLAB</span></a><o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:"Bookman Old Style","serif";
+  color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'>SECRETS OF COMPUTER
+  GAMES, GRAPHICS AND ANIMATIONS</span></b><span style='font-size:14.0pt;
+  mso-bidi-font-size:16.0pt;line-height:150%;color:#C55A11;mso-themecolor:accent2;
+  mso-themeshade:191;mso-style-textfill-fill-color:#C55A11;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=75000'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='color:#C55A11;mso-themecolor:accent2;mso-themeshade:191;mso-style-textfill-fill-color:
+  #C55A11;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=75000'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='color:#843C0C;mso-themecolor:
+  accent2;mso-themeshade:128;mso-style-textfill-fill-color:#843C0C;mso-style-textfill-fill-themecolor:
+  accent2;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+  lumm=50000'>How is it possible to create animations for computer games and
+  graphics?</span><o:p></o:p></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>For
+  realistic motion of objects about a computer screen we need to know the
+  physics related to describing and predicting the motion of objects.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>A full
+  description of the realistic motion of any object in two-dimensions is given
+  by the three vectors: position vector (displacement), velocity and
+  acceleration. </p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Displacement
+  vector<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shapetype
+   id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+   path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:78pt;
+   height:23.25pt' o:ole="">
+   <v:imagedata src="cg001_files/image001.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=104 height=31
+  src="cg001_files/image002.png" v:shapes="_x0000_i1025"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+    DrawAspect="Content" ObjectID="_1678688887">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Velocity vector<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1026" type="#_x0000_t75" style='width:89.25pt;height:26.25pt'
+   o:ole="">
+   <v:imagedata src="cg001_files/image003.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=119 height=35
+  src="cg001_files/image004.png" v:shapes="_x0000_i1026"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+    DrawAspect="Content" ObjectID="_1678688888">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>Acceleration Vector<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:92.25pt;height:26.25pt'
+   o:ole="">
+   <v:imagedata src="cg001_files/image005.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=123 height=35
+  src="cg001_files/image006.png" v:shapes="_x0000_i1027"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+    DrawAspect="Content" ObjectID="_1678688889">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;</span>The motion of object of an object of
+  mass <i style='mso-bidi-font-style:normal'><span style='font-family:"Times New Roman","serif"'>m
+  </span></i>is governed by the net force acting on that object as described by
+  Newton&#8217;s Second Law</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='position:relative;top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" style='width:56.25pt;height:42.75pt'
+   o:ole="">
+   <v:imagedata src="cg001_files/image007.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=75 height=57
+  src="cg001_files/image008.png" v:shapes="_x0000_i1028"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1028"
+    DrawAspect="Content" ObjectID="_1678688890">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Hence, if
+  you know the net force acting on the object, you can predict the
+  acceleration, velocity and displacement at all times. We can perform these
+  calculations assuming the acceleration <span class=GramE><i style='mso-bidi-font-style:
+  normal'><span style='font-family:"Times New Roman","serif"'>a </span></i>is</span>
+  constant during a small time interval. We start with initial values for the
+  velocity and displacement and then calculate the velocity and position of the
+  object at each successive time interval <span style='position:relative;
+  top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+   type="#_x0000_t75" style='width:18.75pt;height:15.75pt' o:ole="">
+   <v:imagedata src="cg001_files/image009.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=25 height=21
+  src="cg001_files/image010.png" v:shapes="_x0000_i1029"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1029"
+    DrawAspect="Content" ObjectID="_1678688891">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>&nbsp;</span>using</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1030" type="#_x0000_t75" style='width:294.75pt;height:24pt'
+   o:ole="">
+   <v:imagedata src="cg001_files/image011.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=393 height=32
+  src="cg001_files/image012.png" v:shapes="_x0000_i1030"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+    DrawAspect="Content" ObjectID="_1678688892">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+  style='position:relative;top:9.0pt;mso-text-raise:-9.0pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1031" type="#_x0000_t75" style='width:462.75pt;height:27pt'
+   o:ole="">
+   <v:imagedata src="cg001_files/image013.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=617 height=36
+  src="cg001_files/image014.png" v:shapes="_x0000_i1031"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+    DrawAspect="Content" ObjectID="_1678688893">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Thus, if
+  we know the position of a collection of objects as a function of time, it is
+  a simple matter to write the code to make an animation of the motion.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Consider
+  the movement of five balls confined to a two-dimensional box. When a ball
+  strikes a wall of the box, the ball is reflected. We want to construct a
+  realistic model to animate the motion of all the balls. The Origin is the
+  point (0, 0). The initial position of the five balls and their initial X and
+  Y velocity components are shown in the figure below:</p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_1" o:spid="_x0000_i1036" type="#_x0000_t75" style='width:475.5pt;
+   height:378pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="cg001_files/image015.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=634 height=504
+  src="cg001_files/image016.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>Predict
+  Observe Explain (POE) #1</span><o:p></o:p></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>The force
+  acting on each ball is zero except when a ball collides with a wall of the
+  box. Predict the motion of each ball and state the physical principles that
+  you needed to make your predictions. Observe the animated gif<span
+  class=GramE>..</span> Compare predictions with the observations and account
+  for any discrepancies. </p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_4" o:spid="_x0000_i1035" type="#_x0000_t75" style='width:475.5pt;
+   height:378pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="cg001_files/image017.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=634 height=504
+  src="cg001_files/image017.gif" v:shapes="Picture_x0020_4"><![endif]></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>Predict
+  Observe Explain (POE) #2</span><o:p></o:p></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>A
+  gravitational force acts on each ball. Predict the motion of each ball and
+  state the physical principles that you needed to make your predictions.
+  Observe the animated gif. Compare predictions with the observations and
+  account for any discrepancies. Comment on the path of each ball, and their
+  velocities and accelerations.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;</span></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_2" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:475.5pt;
+   height:378pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="cg001_files/image018.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=634 height=504
+  src="cg001_files/image018.gif" v:shapes="Picture_x0020_2"><![endif]></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='color:#7030A0'>Predict
+  Observe Explain (POE) #3</span><o:p></o:p></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Assume
+  each ball carries the same positive electric charge and the box is placed
+  inside a uniform electric field that is in the +X direction. Predict the
+  motion of each ball and state the physical principles that you needed to make
+  your predictions. Observe the animated gif<span class=GramE>..</span> Compare
+  predictions with the observations and account for any discrepancies. Comment
+  on the path of each ball, and their velocities and accelerations.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_3" o:spid="_x0000_i1033" type="#_x0000_t75" style='width:475.5pt;
+   height:378pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="cg001_files/image019.gif" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=634 height=504
+  src="cg001_files/image019.gif" v:shapes="Picture_x0020_3"><![endif]></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:#843C0C;
+  mso-themecolor:accent2;mso-themeshade:128;mso-style-textfill-fill-color:#843C0C;
+  mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=50000'>MATLAB<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='font-size:18.0pt;mso-bidi-font-size:16.0pt;line-height:150%;
+  color:blue'><a
+  href="https://drive.google.com/drive/u/3/folders/1j09aAhfrVYpiMavajrgSvUMc89ksF9Jb"><span
+  style='color:blue'>Matlab download directory</span></a></span><span
+  style='color:blue'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Download
+  and run the script <b style='mso-bidi-font-weight:normal'><span
+  style='color:#843C0C;mso-themecolor:accent2;mso-themeshade:128;mso-style-textfill-fill-color:
+  #843C0C;mso-style-textfill-fill-themecolor:accent2;mso-style-textfill-fill-alpha:
+  100.0%;mso-style-textfill-fill-colortransforms:lumm=50000'>cg001.m</span></b><span
+  style='color:black'>.</span> Carefully inspect the script to see how the
+  motion of five balls confined to a two-dimensional box can be realistic
+  modelled. </p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>In Matlab,
+  a [2D] vector can be represented as a complex number. The real part gives the
+  x-component of the vector and the imaginary part the y-component. For
+  example, the displacement as a complex number can be expressed as<span
+  style='mso-spacerun:yes'>&nbsp; </span><span style='position:relative;
+  top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1032"
+   type="#_x0000_t75" style='width:69.75pt;height:18.75pt' o:ole="">
+   <v:imagedata src="cg001_files/image020.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=93 height=25
+  src="cg001_files/image021.png" v:shapes="_x0000_i1032"><![endif]></span><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+    DrawAspect="Content" ObjectID="_1678688894">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>If you
+  have any comments, corrections, suggestions or additions please email</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Ian Cooper</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp; </span>matlabvisualphysics@gmail.com</p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=784 valign=top style='width:587.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;mso-bidi-font-size:
+  16.0pt;line-height:150%;font-family:"Bookman Old Style","serif";color:blue'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
